@@ -1,0 +1,412 @@
+.Master_course_outer {
+  display: block;
+  width: 100%;
+}
+.Master_course_outer .Master_course {
+  margin: 100px 0;
+}
+@media (max-width: 768px) {
+  .Master_course_outer .Master_course {
+    margin: 50px 0;
+  }
+}
+.Master_course .Master_couse_title {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.Master_course .Master_course_desc {
+  font-size: 14px;
+  width: auto;
+  line-height: 27px;
+  margin-bottom: 10px;
+  color: #6084a4;
+}
+
+.Master_course .Master_course_btn button {
+  margin-right: 20px;
+  font-size: 14px;
+  background: transparent;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 8px;
+  cursor: default;
+}
+
+.Master_course .Master_course_btn button:hover {
+  background: #d46615;
+  transition: all 0.5s ease-in-out;
+  color: #fff;
+}
+
+.Master_course .Course_details .title {
+  font-weight: 500;
+}
+
+.Master_course .Course_details ul li:before {
+  content: "\2713";
+  display: inline-block;
+  color: #d46615;
+  padding: 0 6px 0 0;
+}
+
+.Master_course .Course_details ul li {
+  list-style-type: none;
+  font-size: 14px;
+  color: #a5a5a5;
+}
+
+.Master_course .Module,
+.course-faq .alert-primary {
+  color: #000;
+  background-color: #8899a5;
+  border-color: #c5d7f6;
+}
+
+.Module:hover {
+  background-color: #d46615;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.course-tabs {
+  position: sticky;
+  top: 14%;
+  background-color: #f3f3f4;
+  z-index: 3;
+  padding: 20px 0;
+}
+
+@media (max-width: 1280px) {
+  .course-tabs {
+    top: 17%;
+    padding: 22px 0;
+  }
+}
+
+@media (max-width: 1180px) {
+  .course-tabs {
+    top: 16%;
+    padding: 22px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .course-tabs {
+    top: 12%;
+    padding: 22px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .course-tabs {
+    top: 12%;
+    padding: 22px 0;
+  }
+}
+
+@media (max-width: 427px) {
+  .course-tabs {
+    top: 12%;
+    padding: 22px 0;
+  }
+}
+
+@media (max-width: 327px) {
+  .course-tabs {
+    top: 14.5%;
+    padding: 22px 0;
+  }
+}
+
+.course-tabs a {
+  padding: 5px 10px;
+  border: 2px solid #e4e4e4;
+  display: inline-block;
+  color: #a5a5a5;
+  border-radius: 8px;
+  font-weight: 400;
+  font: 14px;
+  background-color: #f9f9f9;
+  margin-bottom: 4px;
+  margin-left: 10px;
+}
+
+#programme-foundation .alert-dark,
+#core-flutter .alert-dark,
+#advance-flutter .alert-dark,
+#aso-earning .alert-dark,
+#flutter-traning .alert-dark,
+.faq-item .alert-dark,
+#core-Android .alert-dark,
+#advance-Android .alert-dark,
+.course-description .alert-dark,
+.web-front-coding .alert-dark,
+.master-back-developer .alert-dark {
+  color: #1b1e23;
+  background-color: #e9eaeb;
+  border-color: #bebfc2;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+/* 
+.course-points li:first-child {
+  color: #504e4e;
+  font-weight: 500;
+  margin-bottom: 14px;
+  font-size: 16px;
+} */
+
+/* .course-points li:first-child::before {
+  content: "\f192" !important;
+  font-family: "font awesome 5 free";
+  font-weight: 900;
+  font-size: 10px;
+} */
+
+.course-point li:first-child::before {
+  display: none;
+}
+
+.course-points li:first-child {
+  margin-bottom: 10px !important;
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+.course-point li {
+  list-style: disc;
+  font-size: 14px;
+  color: #504e4e;
+  margin-bottom: 10px;
+  color: #6084a4;
+}
+
+.course-points {
+  margin-bottom: 20px;
+}
+
+.course-points li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.course-points li::before {
+  content: "\f111" !important;
+  font-family: "font awesome 5 free";
+  font-weight: 900;
+  font-size: 5px;
+  top: -3px;
+  margin-right: 10px;
+  position: relative;
+  opacity: 0.5;
+}
+
+.course-time {
+  font-weight: 500;
+  color: #1b1e23 !important;
+}
+
+.course-btn {
+  background-color: #d46615 !important;
+  border-color: #c5d7f6 !important;
+  color: #fff;
+  display: inline-block;
+  border: none;
+  font-size: 14px;
+  padding: 10px 14px;
+  animation: btn_move 2s infinite;
+}
+
+@keyframes btn_move {
+  0% {
+    transform: scale(0.9);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.course-points_1 h4 {
+  color: #1b1e23;
+  background-color: #e9eaeb;
+  border-color: #bebfc2;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.course-points li {
+  font-size: 14px;
+  color: #6084a4;
+}
+
+.course-points li::before {
+  content: "\f111" !important;
+  font-family: "font awesome 5 free";
+  font-weight: 900;
+  font-size: 5px;
+  top: -3px;
+  margin-right: 10px;
+  position: relative;
+  opacity: 0.5;
+}
+
+#flutter-traning .flutter-title,
+.course-description .title {
+  font-size: 18px;
+  color: #1b1e23;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+#flutter-traning p {
+  color: #504e4e;
+  font-weight: 300;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.faq-item .faq-body .bullets-point li {
+  list-style: disc;
+  color: #6084a4;
+}
+
+/* Full stack  development */
+.Eligibility_course .title {
+  margin-bottom: 10px;
+  color: #343f52;
+  font-weight: 700;
+}
+
+.Eligibility_course ul li::before {
+  content: "\2713";
+  display: inline-block;
+  color: #d46615;
+  padding: 0 6px 0 0;
+}
+
+.course-divider {
+  text-align: center;
+  margin: 20px 0 15px;
+  position: relative;
+}
+
+.course-divider span {
+  font-weight: 600;
+  color: #d46615;
+  background-color: #f3f3f4;
+  position: relative;
+  z-index: 2;
+  padding: 0 15px;
+}
+
+.course-divider::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+  position: absolute;
+  left: 0;
+  top: 12px;
+}
+
+/* ================Inquery-form=============== */
+.inqury-form-outer {
+  width: 100%;
+  padding: 20px;
+  /* background: #f4fafe; */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(72, 69, 224, 0.1);
+}
+
+.inqury-form-outer .form-control {
+  border: none !important;
+  outline: none !important;
+}
+.inqury-form-outer .form-control:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+@media (max-width: 479px) {
+  .inqury-form-outer {
+    padding: 10px;
+  }
+}
+.inqury-form-outer form {
+  position: sticky;
+  top: 100px;
+  padding: 20px;
+}
+
+.inqury-form-outer .form-label {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.inqury-form-outer .input-group .input-group-text {
+  color: #c5d7f6;
+}
+
+.inqury-form-outer .input-group .input-group-text i {
+  color: #66849a;
+}
+
+.input-group-btn .btn {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px 20px;
+  background: #0f172ab8;
+  color: #fff;
+  width: 200px;
+  margin: auto;
+  display: block;
+  border: #d46615;
+}
+
+.input-group-btn .btn:active {
+  border: 1px solid #d46615;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+  color: #d46615;
+}
+
+.item-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 10px;
+  justify-content: center;
+}
+.item-container .grid-item .item-inner {
+  text-align: center;
+}
+
+.item-container .grid-item .item-inner .logo img {
+  width: 100%;
+}
+.item-container .grid-item .item-inner {
+  background: #fff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+}
+
+
+.item-container .grid-item .item-inner .logo-img img {
+  width: 100%;
+}
+.item-container .grid-item .item-inner .title {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+}

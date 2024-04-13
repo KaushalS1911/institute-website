@@ -1,0 +1,1002 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+body {
+  /* background-color: #F3F3F4; */
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #6084a4 !important;
+  transition: 0.5s;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+li {
+  list-style: none;
+}
+
+img  {
+  /* width: 100%; */
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+::-moz-selection {
+  background-color: #d46615;
+  color: #ffffff;
+}
+
+::selection {
+  background-color: #d46615;
+  color: #ffffff;
+}
+
+.rotate90 {
+  transform: rotate(90deg);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.midBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.betBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h1,
+h1 {
+  font-weight: bold;
+}
+
+.h2,
+h2 {
+  font-weight: bold;
+}
+
+.h3,
+h3 {
+  font-weight: bold;
+}
+
+.h4,
+h4 {
+  font-weight: bold;
+}
+
+.h5,
+h5 {
+  font-weight: bold;
+}
+
+.h6,
+h6 {
+  font-weight: bold;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2c529b;
+  border-radius: 10px;
+}
+
+/* Email Submits */
+.emailSubmit {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  margin: auto;
+}
+.emailSubmit .webEmail {
+  width: 100%;
+  max-width: 380px;
+  height: 55px;
+  border: transparent;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.emailSubmit .webEmail:focus {
+  outline: none;
+}
+.emailSubmit .mk-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  border: transparent;
+  padding: 10px;
+  background-color: #f1f1f1;
+  width: 80px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.dark-btn {
+  background-color: #000;
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.mk-active {
+  background-color: #000000 !important;
+  border-radius: 50%;
+  height: 33px;
+  min-width: 27px;
+  color: #ffffff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .mk-active {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.pagination {
+  color: #949494;
+  cursor: pointer;
+  align-items: center;
+}
+.pagination .paginationBtn {
+  color: #000000;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 450px) {
+  .pagination {
+    font-size: 12px;
+  }
+}
+
+.mainSelectBox .selectItem {
+  position: relative;
+  display: inline;
+}
+.mainSelectBox .selectItem .selectBox {
+  font-size: 18px;
+  width: 100%;
+  max-width: 380px;
+  height: 55px;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #cecece;
+  text-align: start;
+}
+.mainSelectBox .selectItem .selectBox::after {
+  display: none;
+}
+.mainSelectBox .selectItem .selectBox:focus {
+  outline: none;
+}
+.mainSelectBox .selectItem .dropdown-menu {
+  width: 100%;
+  max-width: 380px;
+}
+.mainSelectBox .selectItem .dropdown-menu li {
+  font-size: 20px;
+  padding: 10px 25px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.mainSelectBox .selectItem .dropdown-menu li:hover {
+  background-color: #d46615;
+}
+
+.inputData {
+  font-size: 20px;
+  position: relative;
+  text-align: start;
+  /*Tablate Device*/
+  /* Image Input */
+  /* Normal Select */
+  /* Input Select */
+  /*Text Area*/
+  /* Box Image Files */
+  /* For Input Type Password , Search */
+  /* Type Radio And Check Box Label */
+}
+.inputData .errorMessage {
+  margin-top: 5px;
+  font-size: 16px;
+  color: red;
+}
+@media screen and (max-width: 768px) {
+  .inputData .errorMessage {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .inputData .errorMessage {
+    font-size: 12px;
+  }
+}
+.inputData input:invalid ~ .errorMessage {
+  color: red;
+  display: block;
+}
+.inputData label {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 20px;
+  color: #000000;
+  margin-left: 5px;
+}
+@media screen and (max-width: 576px) {
+  .inputData label {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .inputData {
+    font-size: 20px;
+  }
+}
+.inputData .multiImage {
+  max-height: 200px;
+  overflow: auto;
+}
+.inputData .multiImage > div[data-index="index"] {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  margin-left: 0;
+  position: relative;
+}
+.inputData .multiImage > div[data-index="index"] > div[data-remove="remove"] {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  background-color: #2c529b;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.inputData .multiImage > div[data-index="index"] img[data-class="showImage"] {
+  margin-top: 0;
+}
+.inputData img[data-class="showImage"] {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  margin-left: 0;
+}
+.inputData .selectMain {
+  position: relative;
+  display: inline;
+  width: 100%;
+}
+.inputData .selectMain .selectBox {
+  font-size: 18px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #cecece;
+  text-align: start;
+  height: auto;
+}
+.inputData .selectMain .selectBox .showSelectValue p {
+  display: block;
+}
+.inputData .selectMain .selectBox .showSelectValue input {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .inputData .selectMain .selectBox {
+    font-size: 12px;
+    padding: 5px;
+  }
+}
+.inputData .selectMain .selectBox::after {
+  display: none;
+}
+.inputData .selectMain .selectBox:focus {
+  outline: none;
+}
+.inputData .selectMain ul {
+  position: absolute;
+  top: calc(100% - 25px);
+  margin: 0px;
+  background-color: #ffffff;
+  box-shadow: 0 0 12px rgba(15, 34, 58, 0.121);
+}
+.inputData .selectMain ul.topSide {
+  bottom: 100%;
+  top: auto;
+}
+.inputData .selectMain ul.bottomSide {
+  top: 70%;
+  bottom: auto;
+}
+.inputData .selectMain ul li {
+  font-size: 16px;
+  padding: 3px 18px;
+  cursor: pointer;
+}
+.inputData .selectMain ul li:first-child {
+  display: none;
+}
+.inputData .selectMain ul li:hover {
+  background-color: #2c529b;
+  color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .inputData .selectMain ul li {
+    font-size: 14px;
+  }
+}
+.inputData .multiSelectionDisplay {
+  background-color: #d8d8d8;
+  padding: 4px 12px;
+  display: inline-flex;
+  align-items: center;
+  margin: 5px 5px;
+}
+.inputData.inputSelect .selectMain {
+  width: 100%;
+  margin-top: 10px;
+  display: block;
+}
+@media screen and (max-width: 576px) {
+  .inputData.inputSelect .selectMain {
+    margin-top: 3px;
+  }
+}
+.inputData.inputSelect .selectMain .selectBox {
+  border: none;
+  background-color: #f3f3f3;
+  padding: 7px 10px 7px 20px;
+}
+.inputData.inputSelect .selectMain .selectBox input:focus {
+  outline: none;
+}
+.inputData.inputSelect .selectMain .selectBox .showSelectValue input {
+  display: block;
+}
+@media screen and (max-width: 992px) {
+  .inputData.inputSelect .selectMain .selectBox {
+    font-weight: 400;
+    padding: 10px 12px 10px 20px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .inputData.inputSelect .selectMain .selectBox {
+    padding: 10px 10px 10px 20px;
+    font-size: 12px;
+  }
+}
+.inputData.inputSelect .selectMain ul {
+  width: 100%;
+  z-index: 10;
+  max-height: 220px;
+  overflow: auto;
+}
+@media screen and (max-width: 992px) {
+  .inputData.inputSelect .selectMain ul {
+    max-height: 135px;
+  }
+}
+.inputData.inputSelect .selectMain ul li {
+  font-size: 18px;
+  padding: 5px 18px;
+}
+.inputData.inputSelect .selectMain ul li:first-child {
+  display: block;
+}
+@media screen and (max-width: 992px) {
+  .inputData.inputSelect .selectMain ul li {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .inputData.inputSelect .selectMain ul li {
+    font-size: 12px;
+  }
+}
+.inputData textarea {
+  width: 100%;
+  background: #e1e1e1;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25) inset;
+  outline: none;
+}
+.inputData textarea:focus {
+  outline-color: #2c529b;
+  outline-width: 1px;
+}
+.inputData textarea::-moz-placeholder {
+  color: #b1b1b1;
+  font-size: 16px;
+}
+.inputData textarea::placeholder {
+  color: #b1b1b1;
+  font-size: 16px;
+}
+@media screen and (max-width: 992px) {
+  .inputData textarea::-moz-placeholder {
+    font-size: 14px;
+  }
+  .inputData textarea::placeholder {
+    font-size: 14px;
+  }
+}
+.inputData input {
+  width: 100%;
+  height: 50px;
+  border-radius: 14px;
+  background: #e1e1e1;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25) inset;
+  border: none;
+  padding: 0 20px;
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: 16px;
+  /* For Input Type Search */
+  /* For Input Type Number */
+  /* Type Radio And Check Box */
+  /* For Input Type File */
+}
+.inputData input:focus {
+  outline-color: #2c529b;
+  outline-width: 1px;
+}
+.inputData input::-moz-placeholder {
+  color: #b1b1b1;
+  font-size: 16px;
+}
+.inputData input::placeholder {
+  color: #b1b1b1;
+  font-size: 16px;
+}
+@media screen and (max-width: 992px) {
+  .inputData input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .inputData input::placeholder {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .inputData input {
+    padding: 0 15px;
+    height: 38px;
+    margin-top: 2px;
+    font-size: 12px;
+  }
+  .inputData input::-moz-placeholder {
+    font-size: 12px;
+  }
+  .inputData input::placeholder {
+    font-size: 12px;
+  }
+}
+.inputData input[type="search"]::-webkit-search-results-decoration,
+.inputData input[type="search"]::-webkit-search-decoration,
+.inputData input[type="search"]::-webkit-search-cancel-button,
+.inputData input[type="search"]::-webkit-search-results-button {
+  font-size: 16px;
+}
+@media screen and (max-width: 576px) {
+  .inputData input[type="search"] {
+    height: 30px;
+    font-size: 12px;
+  }
+  .inputData input[type="search"]::-moz-placeholder {
+    font-size: 12px;
+  }
+  .inputData input[type="search"]::placeholder {
+    font-size: 12px;
+  }
+}
+.inputData input[type="search"]:focus {
+  outline: none;
+}
+.inputData input::-webkit-outer-spin-button,
+.inputData input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inputData input[type="radio"],
+.inputData input[type="checkbox"] {
+  height: 18px !important;
+  width: 18px !important;
+  accent-color: #2c529b;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  .inputData input[type="radio"],
+  .inputData input[type="checkbox"] {
+    height: 16px !important;
+    width: 16px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .inputData input[type="radio"],
+  .inputData input[type="checkbox"] {
+    height: 14px !important;
+    width: 14px !important;
+  }
+}
+.inputData input[type="radio"].error-radio::before,
+.inputData input[type="checkbox"].error-radio::before {
+  border: 1px solid red;
+  border-radius: 50%;
+}
+.inputData input[type="radio"].error-checkbox::before,
+.inputData input[type="checkbox"].error-checkbox::before {
+  border: 1px solid red;
+  border-radius: 2px;
+}
+.inputData input[type="radio"]::before,
+.inputData input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+}
+@media screen and (max-width: 992px) {
+  .inputData input[type="radio"]::before,
+  .inputData input[type="checkbox"]::before {
+    height: 16px !important;
+    width: 16px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .inputData input[type="radio"]::before,
+  .inputData input[type="checkbox"]::before {
+    height: 14px !important;
+    width: 14px !important;
+  }
+}
+.inputData input[type="file"] {
+  padding: 0px;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+}
+@media screen and (max-width: 768px) {
+  .inputData input[type="file"] {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .inputData input[type="file"] {
+    font-size: 10px;
+  }
+}
+.inputData input[type="file"]::file-selector-button {
+  margin-right: 15px;
+  border: none;
+  background: #2c529b;
+  padding: 0px 10px 8px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  height: 47px;
+}
+@media screen and (max-width: 768px) {
+  .inputData input[type="file"]::file-selector-button {
+    width: 100px;
+    padding: 8px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .inputData input[type="file"]::file-selector-button {
+    width: 80px;
+    padding: 8px;
+    height: 37px;
+    font-size: 12px;
+  }
+}
+.inputData .imageBoxMain {
+  display: flex;
+  align-items: start;
+  margin-top: 15px;
+}
+.inputData .imageBoxMain .boxImage {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  min-height: 100px;
+  min-width: 100px;
+  border: 3px solid #2c529b;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  .inputData .imageBoxMain .boxImage {
+    height: 70px;
+    width: 70px;
+    min-height: 70px;
+    min-width: 70px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .inputData .imageBoxMain .boxImage {
+    height: 50px;
+    width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .inputData .imageBoxMain .boxImage {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+.inputData .imageBoxMain .boxImage::before {
+  font-weight: 300;
+  font-size: 50px;
+  height: 100%;
+  width: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .inputData .imageBoxMain .boxImage::before {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .inputData .imageBoxMain .boxImage::before {
+    font-size: 30px;
+  }
+}
+.inputData .imageBoxMain .boxImage input {
+  transform: scale(2);
+  margin-top: 0;
+  opacity: 0;
+  position: absolute;
+}
+.inputData .imageBoxMain .multiImage {
+  max-width: unset;
+  overflow: unset;
+}
+.inputData .imageBoxMain .multiImage div[data-index="index"] {
+  margin-top: 0;
+}
+@media screen and (max-width: 992px) {
+  .inputData .imageBoxMain .multiImage div[data-index="index"] {
+    height: 70px;
+    width: 70px;
+    min-height: 70px;
+    min-width: 70px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .inputData .imageBoxMain .multiImage div[data-index="index"] {
+    height: 50px;
+    width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .inputData .imageBoxMain .multiImage div[data-index="index"] {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+.inputData
+  .imageBoxMain
+  .multiImage
+  div[data-index="index"]
+  img[data-class="showImage"] {
+  border: 3px solid #2c529b;
+  border-radius: 10px;
+}
+@media screen and (max-width: 992px) {
+  .inputData
+    .imageBoxMain
+    .multiImage
+    div[data-index="index"]
+    img[data-class="showImage"] {
+    height: 70px;
+    width: 70px;
+    min-height: 70px;
+    min-width: 70px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .inputData
+    .imageBoxMain
+    .multiImage
+    div[data-index="index"]
+    img[data-class="showImage"] {
+    height: 50px;
+    width: 50px;
+    min-height: 50px;
+    min-width: 50px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .inputData
+    .imageBoxMain
+    .multiImage
+    div[data-index="index"]
+    img[data-class="showImage"] {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+.inputData .passHideShow,
+.inputData .searching,
+.inputData .activeIcon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-30%);
+  right: 14px;
+  cursor: pointer;
+}
+.inputData.radio,
+.inputData.checkbox {
+  display: flex;
+  align-items: center;
+}
+.inputData.radio label,
+.inputData.checkbox label {
+  margin-bottom: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.mk-btn {
+  background-color: #2c529b;
+  color: #fff;
+  border-color: transparent;
+  padding: 10px 0;
+}
+
+/* ============= Dialog CSS ============= */
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4196078431);
+  z-index: 8;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.dialog .mainDiaogBox {
+  background-color: #fff;
+  padding: 20px;
+  max-height: 98vh;
+  overflow: auto;
+}
+.dialog .mainDiaogBox .formBody {
+  max-height: 600px;
+  overflow: auto;
+}
+.dialog .mainDiaogBox .formBody > div {
+  margin-bottom: 10px;
+}
+.dialog .mainDiaogBox .closeButton {
+  font-size: 30px;
+  background-color: #2c529b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  color: #fff;
+  margin-left: auto;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .dialog .mainDiaogBox h2 {
+    font-size: 20px;
+  }
+  .dialog .mainDiaogBox .closeButton {
+    font-size: 20px;
+    height: 25px;
+    width: 25px;
+  }
+}
+
+.mainMultiSelector > .row {
+  position: relative;
+  border-radius: 10px;
+  border: dashed #2c529b 2px;
+  padding: 20px 30px !important;
+  margin: 20px 0 !important;
+}
+@media screen and (max-width: 576px) {
+  .mainMultiSelector > .row {
+    padding: 10px 0 !important;
+  }
+}
+.mainMultiSelector .multiRemover {
+  background-color: #2c529b;
+  color: #ffffff;
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* ============= Page Dialogue CSS ============= */
+.formFooter {
+  padding: 30px 0 !important;
+}
+
+/* ============= Button CSS ============= */
+button.themeButton {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: none;
+}
+@media screen and (max-width: 576px) {
+  button.themeButton {
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+}
+
+/* ============= Login CSS ============= */
+.loginDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginDiv .loginPage {
+  padding: 20px 25px;
+}
+.loginDiv .loginPage .loginFooter {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .loginDiv .loginPage .loginFooter {
+    font-size: 14px;
+  }
+}
+
+/* ============= Sign up CSS ============= */
+.mainSignupPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainSignupPage .signPage {
+  padding: 20px 25px;
+}
+.mainSignupPage .signPage .forgetPassword {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .mainSignupPage .signPage .forgetPassword {
+    font-size: 14px;
+  }
+}
+
+/* ============= Swal Warning CSS ============= */
+.swal2-container {
+  background: rgba(0, 0, 0, 0.075) !important;
+}
+.swal2-container .swal2-popup {
+  background: rgba(255, 255, 255, 0.77);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.swal2-container .swal2-popup .swal2-icon {
+  border: none !important;
+}
+.swal2-container .swal2-popup .swal2-icon .swal2-icon-content {
+  font-size: 5.75rem;
+  color: #2c529b;
+}
+
+.scrollPage {
+  height: 100vh;
+  overflow: auto;
+}
+
+.webTable {
+  border: 1px solid #c65f14;
+}
+@media screen and (max-width: 992px) {
+  .webTable tr {
+    font-size: 14px;
+  }
+  .webTable tr h6 {
+    font-size: 15px;
+  }
+}
+.webTable tr th {
+  background-color: #d46615;
+  padding: 10px 20px;
+}
+.webTable tr td {
+  padding: 20px;
+} /*# sourceMappingURL=custom.css.map */
