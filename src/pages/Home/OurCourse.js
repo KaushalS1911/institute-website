@@ -1,5 +1,5 @@
 import React from "react";
-import OurCourseImage from "../../assets/images/Home/image-3.jpeg";
+import OurCourseImage from "../../assets/images/Home/image-3.webp";
 import { FiCheckCircle } from "react-icons/fi";
 import { Link } from "react-router-dom";
 

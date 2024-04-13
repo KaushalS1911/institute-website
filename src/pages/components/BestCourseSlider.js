@@ -2,10 +2,10 @@ import React from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import Lng1 from "../../assets/images/lng1.png"
-import Lng2 from "../../assets/images/lng2.png"
-import Lng3 from "../../assets/images/lng3.png"
-import Lng4 from "../../assets/images/lng4.png"
+import Lng1 from "../../assets/images/lng1.webp"
+import Lng2 from "../../assets/images/lng2.webp"
+import Lng3 from "../../assets/images/lng3.webp"
+import Lng4 from "../../assets/images/lng4.webp"
 const BestCourseSlider = () => {
 
     const option = {

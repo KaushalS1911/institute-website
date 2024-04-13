@@ -1,5 +1,5 @@
 import React from 'react';
-import OurCourseImage from "../../assets/images/ourCourse.png"
+import OurCourseImage from "../../assets/images/ourCourse.webp"
 
 const OurCourse = () => {
   

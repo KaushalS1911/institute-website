@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import Service1 from "../../assets/images/Home/Service/service1.png";
-import Service2 from "../../assets/images/Home/Service/service2.png";
-import Service3 from "../../assets/images/Home/Service/service3.png";
+import Service1 from "../../assets/images/Home/Service/service1.webp";
+import Service2 from "../../assets/images/Home/Service/service2.webp";
+import Service3 from "../../assets/images/Home/Service/service3.webp";
 import ServicesBox from "./ServicesBox";
 
 const Service = () => {

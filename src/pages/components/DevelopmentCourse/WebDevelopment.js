@@ -2,7 +2,7 @@ import React from 'react'
 import Header from '../../globle/Header';
 import Footer from '../../globle/Footer';
 import PageTitle from '../PageTitle';
-import LowerDesign from "../../../assets/images/lowerDesign.png"
+import LowerDesign from "../../../assets/images/lowerDesign.webp"
 import InqueryForm from '../../extra/InqueryForm';
 import SubscribeNewsletter from '../../utils/SubscribeNewsletter';
 import Scrollable from '../../../Scrollable';

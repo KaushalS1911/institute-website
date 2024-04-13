@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import Service1 from "../../assets/icons/service1.png"
-import Service2 from "../../assets/icons/service2.png"
-import Service3 from "../../assets/icons/service3.png"
+import Service1 from "../../assets/icons/service1.webp"
+import Service2 from "../../assets/icons/service2.webp"
+import Service3 from "../../assets/icons/service3.webp"
 import ServicesBox from '../ServicesBox';
 
 

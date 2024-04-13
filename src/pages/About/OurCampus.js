@@ -1,11 +1,11 @@
 import React from "react";
 
-import img1 from "../../assets/images/About/img1.JPG";
-import img2 from "../../assets/images/About/img2.JPG";
-import img3 from "../../assets/images/About/img3.JPG";
-import img4 from "../../assets/images/About/img4.JPG";
-import img5 from "../../assets/images/About/img5.JPG";
-import img6 from "../../assets/images/About/img6.JPG";
+import img1 from "../../assets/images/About/img1.webp";
+import img2 from "../../assets/images/About/img2.webp";
+import img3 from "../../assets/images/About/img3.webp";
+import img4 from "../../assets/images/About/img4.webp";
+import img5 from "../../assets/images/About/img5.webp";
+import img6 from "../../assets/images/About/img6.webp";
 
 const OurCampus = () => {
     return (

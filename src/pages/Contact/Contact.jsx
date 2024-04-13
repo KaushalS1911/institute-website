@@ -2,7 +2,7 @@ import React from "react";
 // import Scrollable from "../Scrollable";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import ContactImg from "../../assets/images/Contactus/Contact-Us_image.png";
+import ContactImg from "../../assets/images/Contactus/Contact-Us_image.webp";
 import axios from "axios";
 import PageTitle from "../Common/PageTitle";
 

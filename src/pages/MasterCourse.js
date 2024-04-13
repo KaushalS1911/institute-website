@@ -18,9 +18,6 @@ const MasterCourse = () => {
         <Header />
       </div>
       <div id="bannerSlider" className="position-relative">
-        <div className="lowerDesign">
-          <img src={LowerDesign} width={"100%"} />
-        </div>
         <PageTitle title={`Master Course`} />
       </div>
 
