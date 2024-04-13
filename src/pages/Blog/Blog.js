@@ -30,7 +30,7 @@ const initialData = [
         },
       ],
     },
-    date: "18th Apr, 2020",
+    date: "18th Apr, 2023",
   },
   {
     image:
@@ -87,7 +87,7 @@ const initialData = [
         },
       ],
     },
-    date: "25th June, 2021",
+    date: "25th June, 2022",
   },
 
   {
@@ -139,7 +139,7 @@ const initialData = [
         },
       ],
     },
-    date: "20th Sep, 2022",
+    date: "20th Mar, 2022",
   },
   {
     image:
@@ -197,7 +197,7 @@ const initialData = [
         },
       ],
     },
-    date: "10 Dec, 2023",
+    date: "10 Dec, 2021",
 
   },
   {
@@ -252,7 +252,7 @@ const initialData = [
         },
       ],
     },
-    date: "30th jan, 2023",
+    date: "30th May, 2021",
 
   },
 ];

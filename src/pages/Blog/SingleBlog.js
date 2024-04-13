@@ -21,12 +21,12 @@ const SingleBlog = () => {
           <div className="text-center singleBoxImage height-md-450 height-250">
             <img src={blogData.image} alt="" className="h-100 w-100" />
           </div>
-          <div className="d-flex justify-content-center my-md-5 my-5">
-            <div className="text-center my-md-3 w-xl-60  fw-bold fs-lg-38 fs-md-28 fs-22">
+          <div className="d-flex justify-content-center w-100  my-md-5 my-5">
+            <div className="my-md-3 fw-bold fs-lg-38 fs-md-28 fs-22">
               {blogData.title}
             </div>
           </div>
-          <div className="p-4 border rounded col-md-6 offset-md-3">
+          <div className="p-4 border rounded">
             <div>
               <h5 style={{ color: "#1E293B" }} className="mb-4">
                 Table of contents
@@ -40,7 +40,7 @@ const SingleBlog = () => {
               </ul>
             </div>
           </div>
-          <div className="desciptive-data w-lg-50 offset-lg-3">
+          <div className="desciptive-data">
             {blogData?.content?.list_of_points.map((e, ind) => {
               return (
                 <div className="py-3" key={ind} id={ind}>
