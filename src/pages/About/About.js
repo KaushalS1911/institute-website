@@ -9,21 +9,18 @@ import Company from "./OurPlacement";
 const About = () => {
   return (
     <>
-      {/* Comon Slider */}
       <div id="bannerSlider" className="position-relative">
         <PageTitle title={`About Us`} />
       </div>
 
-      {/* Our University */}
       <OurUniversity />
-
-      <section id="rankSection">
-        <Rank />
-      </section>
 
       <OurCampus />
 
-      
+        <section id="rankSection">
+            <Rank />
+        </section>
+
       <Company />
     </>
   );
