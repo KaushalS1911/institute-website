@@ -11,8 +11,8 @@ const OurAbout = () => {
           <div className="startAbout">
             <div className="row">
               <div className="col-sm-6 col-12 ">
-                <div className="bannerContent  text-md-start text-center animate__animated">
-                  <div className="fs-lg-32 fw-700 fs-md-40 fs-20 text-second mb-4 information">
+                <div className="bannerContent text-md-start text-center animate__animated">
+                  <div className="fs-lg-42 fs-md-40 fs-20 fw-600 mb-4 ">
                     At the crossroads of imagination and innovation, JBS IT
                     INSTITUTE stands as a guiding light.
                   </div>
