@@ -1,11 +1,11 @@
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import RatingImage1 from "../../assets/images/Home/testimonial/ratingImage1.png";
-import RatingImage2 from "../../assets/images/Home/testimonial/ratingImage2.png";
-import RatingImage3 from "../../assets/images/Home/testimonial/ratingImage3.png";
-import vector1 from "../../assets/images/Home/testimonial/Vector2.png";
-import vector2 from "../../assets/images/Home/testimonial/vector (5).png";
+import RatingImage1 from "../../assets/images/Home/testimonial/ratingImage1.webp";
+import RatingImage2 from "../../assets/images/Home/testimonial/ratingImage2.webp";
+import RatingImage3 from "../../assets/images/Home/testimonial/ratingImage3.webp";
+import vector1 from "../../assets/images/Home/testimonial/Vector2.webp";
+import vector2 from "../../assets/images/Home/testimonial/vector (5).webp";
 
 const Testimonial = () => {
   const option = {

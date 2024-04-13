@@ -2,8 +2,8 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import slide1 from "../../assets/images/Home/Slider/slide1.png";
-import slide2 from "../../assets/images/Home/Slider/slide2.png";
+import slide1 from "../../assets/images/Home/Slider/slide1.webp";
+import slide2 from "../../assets/images/Home/Slider/slide2.webp";
 
 function Slider() {
   const Main_slider = {

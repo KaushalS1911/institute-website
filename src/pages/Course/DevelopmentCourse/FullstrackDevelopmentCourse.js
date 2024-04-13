@@ -1,19 +1,19 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
-import html from "../../../assets/images/Course/language/html.png";
-import css from "../../../assets/images/Course/language/css.png";
-import jquery from "../../../assets/images/Course/language/jquery.png";
-import Bootstrap from "../../../assets/images/Course/language/bootstrap.png";
-import c from "../../../assets/images/Course/language/c.png";
-import Javascript from "../../../assets/images/Course/programming/java.png";
-import ECMAScript from "../../../assets/images/Course/language/Expressjs.png";
-import Angular from "../../../assets/images/Course/language/angular.png";
+import html from "../../../assets/images/Course/language/html.webp";
+import css from "../../../assets/images/Course/language/css.webp";
+import jquery from "../../../assets/images/Course/language/jquery.webp";
+import Bootstrap from "../../../assets/images/Course/language/bootstrap.webp";
+import c from "../../../assets/images/Course/language/c.webp";
+import Javascript from "../../../assets/images/Course/programming/java.webp";
+import ECMAScript from "../../../assets/images/Course/language/Expressjs.webp";
+import Angular from "../../../assets/images/Course/language/angular.webp";
 import Reactjs from "../../../assets/images/Course/language/reactjs.webp";
-import Vue from "../../../assets/images/Course/language/vuejs.png";
-import Nodejs from "../../../assets/images/Course/language/nodejs.png";
-import Expressjs from "../../../assets/images/Course/language/Expressjs.png";
-import MongoDB from "../../../assets/images/Course/language/monogdb.png";
+import Vue from "../../../assets/images/Course/language/vuejs.webp";
+import Nodejs from "../../../assets/images/Course/language/nodejs.webp";
+import Expressjs from "../../../assets/images/Course/language/Expressjs.webp";
+import MongoDB from "../../../assets/images/Course/language/monogdb.webp";
 import { Link } from "react-router-dom";
 
 function FullstrackDevelopmentCourse() {

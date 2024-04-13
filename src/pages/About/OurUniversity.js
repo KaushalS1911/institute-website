@@ -1,5 +1,5 @@
 import React from "react";
-import OurCourseImage from "../../assets/images/About/SUJAL-5.jpg";
+import OurCourseImage from "../../assets/images/About/SUJAL-5.webp";
 
 const OurUniversity = () => {
     return (
@@ -12,7 +12,7 @@ const OurUniversity = () => {
                                 className="ourCourseImage rounded-1 overflow-hidden  height-md-600 height-400">
                                 <img
                                     src={OurCourseImage}
-                                    alt="Our Course Image"
+                                    alt="OurCourseImage"
                                     height={`100%`}
                                     width={`100%`}
                                 />

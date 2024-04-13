@@ -763,7 +763,7 @@
 
 .backgroundImage {
   background: linear-gradient(rgba(8, 8, 8, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../../images/About/BankgroundImage.jpg");
+    url("../../images/About/BankgroundImage.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -854,7 +854,7 @@
 }
 
 #ratingSection .mainSlider {
-  background-image: url("../../images//Home//testimonial//community.png");
+  background-image: url("../../images//Home//testimonial//community.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;

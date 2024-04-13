@@ -2,11 +2,11 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import company1 from "../../assets/images/Home/place_partner/company1.svg";
-import company2 from "../../assets/images/Home/place_partner/company2.svg";
-import company3 from "../../assets/images/Home/place_partner/company3.png";
-import company4 from "../../assets/images/Home/place_partner/company4.png";
-import company5 from "../../assets/images/Home/place_partner/company5.png";
+import company1 from "../../assets/images/Home/place_partner/company1.webp";
+import company2 from "../../assets/images/Home/place_partner/company2.webp";
+import company3 from "../../assets/images/Home/place_partner/company3.webp";
+import company4 from "../../assets/images/Home/place_partner/company4.webp";
+import company5 from "../../assets/images/Home/place_partner/company5.webp";
 
 const OurPlacement = () => {
   const option = {

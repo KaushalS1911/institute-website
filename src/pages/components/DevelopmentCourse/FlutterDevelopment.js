@@ -1,5 +1,5 @@
 import React from 'react'
-import LowerDesign from "../../../assets/images/lowerDesign.png"
+import LowerDesign from "../../../assets/images/lowerDesign.webp"
 import Header from '../../globle/Header';
 import Footer from '../../globle/Footer';
 import PageTitle from '../PageTitle';

@@ -1,5 +1,5 @@
 import React from 'react';
-import RoundEffect from "../../assets/images/roundEffect.png"
+import RoundEffect from "../../assets/images/roundEffect.webp"
 //  import TechnologyVideo from '../../assets/video/Technology.mp4'
 
 const Video = () => {

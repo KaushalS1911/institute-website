@@ -1,8 +1,8 @@
 import React from "react";
-import ItPic1 from "../../assets/images/Home/About/About1.jpg";
-import ItPic2 from "../../assets/images/Home/About/About2.jpg";
-import ItPic3 from "../../assets/images/Home/About/About3.jpg";
-import ItPic4 from "../../assets/images/Home/About/IMG_8009.jpg";
+import ItPic1 from "../../assets/images/Home/About/About1.webp";
+import ItPic2 from "../../assets/images/Home/About/About2.webp";
+import ItPic3 from "../../assets/images/Home/About/About3.webp";
+import ItPic4 from "../../assets/images/Home/About/IMG_8009.webp";
 const OurAbout = () => {
   return (
     <>

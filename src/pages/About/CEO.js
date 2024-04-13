@@ -1,9 +1,9 @@
-import CEO1 from "../../assets/images/About/CEO1.png";
-import CEO2 from "../../assets/images/About/CEO2.png";
-import Staff1 from "../../assets/images/About/staff1.jpg";
-import Staff2 from "../../assets/images/About/staff2.jpg";
-import Staff3 from "../../assets/images/About/staff3.jpg";
-import Staff4 from "../../assets/images/About/staff4.jpg";
+import CEO1 from "../../assets/images/About/CEO1.webp";
+import CEO2 from "../../assets/images/About/CEO2.webp";
+import Staff1 from "../../assets/images/About/staff1.webp";
+import Staff2 from "../../assets/images/About/staff2.webp";
+import Staff3 from "../../assets/images/About/staff3.webp";
+import Staff4 from "../../assets/images/About/staff4.webp";
 import { FaLinkedin } from "react-icons/fa";
 
 const CEO = () => {
