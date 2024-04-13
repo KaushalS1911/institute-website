@@ -4,16 +4,7 @@ import { Link } from "react-router-dom";
 import $ from "jquery";
 import { baseURL } from "../utils/config";
 
-// import Mail from "../../assets/icons/email.png";
-// import Linkdin from "../../assets/icons/linkdin.png";
-// import Facebook from "../../assets/icons/facebook.png";
-// import Whatsapp from "../../assets/icons/whatsapp.png";
-// import Twitter from "../../assets/icons/twitter.png";
-// import Instagram from "../../assets/icons/instagram.png";
-// import Google from "../../assets/icons/google.png";
-
 const Header = () => {
-  //Proceebar
   const [scrollTop, setScrollTop] = useState(0);
 
   const onScroll = () => {
