@@ -247,7 +247,7 @@ const Contact = () => {
                 </div>
                 <h3 className="fw-medium fs-20 my-3">Mail Here</h3>
                 <p className="text-secondary fs-lg-16 fs-md-14 fs-13">
-                  contact@ghanshyamdigital.com
+                  jbsit01@gmail.com
                 </p>
               </div>
             </div>
@@ -258,8 +258,7 @@ const Contact = () => {
                 </div>
                 <h3 className="fw-medium fs-20 my-3">Visit Here</h3>
                 <p className="text-secondary fs-lg-16 fs-md-14 fs-13">
-                  107, 1st Floor, 21st century business centre, Nr.World trade
-                  centre, Ring Road, Surat - 395003, Gujarat, IN
+                  F-38, City Center, Yogi Chowk, Yogi Chowk Ground, Chikuwadi, Varachha, Surat, Gujarat 395010
                 </p>
               </div>
             </div>
@@ -270,7 +269,7 @@ const Contact = () => {
                 </div>
                 <h3 className="fw-medium fs-20 my-3">Call Here</h3>
                 <p className="text-secondary fs-lg-16 fs-md-14 fs-13">
-                  +91 98752 63080
+                  +91 7984443901
                 </p>
               </div>
             </div>
