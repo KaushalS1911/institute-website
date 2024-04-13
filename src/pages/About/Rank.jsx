@@ -144,7 +144,7 @@ const Rank = () => {
                               <span className="ps-1">+</span>
                             </p>
                             <h5 style={{ color: "#fff", opacity: "0.7" }}>
-                              Certification Aprooval
+                              Certification Approval
                             </h5>
                           </div>
                         </div>
