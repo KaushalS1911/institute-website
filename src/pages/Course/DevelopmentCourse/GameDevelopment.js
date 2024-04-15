@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function GameDevelopment() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
-        <PageTitle title={`Game Development`} />
-      </div>
+      <PageTitle title={`Game Development`} />
 
       <div className="Master_course_outer block">
         <div className="container">

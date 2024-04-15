@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap');
+
 .mainHeader {
   position: relative;
   z-index: 2;
@@ -1055,16 +1057,6 @@
   color: #fff;
 }
 
-/* .course-tabs a {
-  padding: 5px 10px;
-  border: 2px solid #e4e4e4;
-  display: inline-block;
-  color: #000;
-  border-radius: 8px;
-  font-weight: 500;
-  background-color: #f9f9f9;
-  margin-bottom: 4px;
-} */
 
 .mainCourseBox {
   position: relative;
@@ -1162,9 +1154,6 @@
 #contactForm .selectBox::placeholder {
   color: #d46615;
 }
-
-/*# sourceMappingURL=style.css.map */
-
 .aboutUs li {
   display: flex;
   align-items: center;
@@ -1688,8 +1677,6 @@
 }
 /* ===========CONTACT================ */
 .contact-outer {
-  /* padding: 50px 0; */
-  /* background-color: #f6f8f8; */
   background-color: #fff;
 }
 
@@ -1706,13 +1693,22 @@
   border: none !important;
 }
 
+
 .contact-info-box {
   background-color: #fff;
   padding: 30px;
   text-align: center;
+  border-radius: 10px!important;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
   transition: 0.5s;
+  aspect-ratio: 2.3/1.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
 }
+
+
 .contact-info-box .contact-icon {
   text-align: center;
   background: #f7fafd;
@@ -1724,19 +1720,21 @@
   transition: 0.5s;
   width: 65px;
 }
+
 .contact-info-box:hover .contact-icon {
   background-color: #ea8721;
   color: white;
 }
+
 .contact-info-box:hover {
   transform: translateY(-10px);
 }
 
 /*============ inqury-form css================= */
+
 .form-control_1 {
   background-color: #fff !important;
   border: 1px solid #dee2e6;
-  /* box-shadow: inset 0 1px 4px 0 rgba(0, 0, 0, 0.15); */
   width: 85%;
   border-radius: 6px;
   line-height: 1.5;
@@ -1814,4 +1812,20 @@
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+}
+
+
+/* Inqury-Form */
+form.InquiryForm {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+  border-radius: 10px;
+}
+form.InquiryForm .inq-title {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Gelasio", serif;
+  font-weight: 600;
+  color: #0e3c42;
 }

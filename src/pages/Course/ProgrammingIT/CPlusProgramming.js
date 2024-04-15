@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function CPlusProgramming() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
         <PageTitle title={`C++ Programming`} />
-      </div>
 
       <div className="Master_course_outer block">
         <div className="container">

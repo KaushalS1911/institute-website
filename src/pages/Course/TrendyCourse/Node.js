@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function Node() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
         <PageTitle title={`Node Js`} />
-      </div>
 
       <div className="Master_course_outer block">
         <div className="container">

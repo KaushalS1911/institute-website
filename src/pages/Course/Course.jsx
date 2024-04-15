@@ -23,11 +23,8 @@ import PageTitle from "../Common/PageTitle";
 
 function Course() {
   return (
-    <div>
-      <div id="bannerSlider" className="position-relative">
-        <PageTitle title={`Course`} />
-      </div>
-
+    <>
+      <PageTitle title={`Course`} />
       <div className="course-outer">
         <div className="container">
           <div className="course-inner">
@@ -306,7 +303,7 @@ function Course() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

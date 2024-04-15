@@ -5,10 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function GraphicDesign() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
-        <PageTitle title={`Master In Graphic Design`} />
-      </div>
-
+      <PageTitle title={`Master In Graphic Design`} />
       <div className="Master_course_outer block">
         <div className="container">
           <div className="Master_course">
@@ -222,7 +219,6 @@ function GraphicDesign() {
                         </div>
                       </div>
                     </div>
-                    
                   </div>
                 </div>
                 <div className="col-lg-3"></div>

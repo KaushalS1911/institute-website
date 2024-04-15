@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function AspDotNetDevelopment() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
-        <PageTitle title={`ASP.net development`} />
-      </div>
+      <PageTitle title={`ASP.net development`} />
 
       <div className="Master_course_outer block">
         <div className="container">

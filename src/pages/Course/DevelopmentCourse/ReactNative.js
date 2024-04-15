@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function ReactNative() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
-        <PageTitle title={`React Native`} />
-      </div>
+      <PageTitle title={`React Native`} />
 
       <div className="Master_course_outer block">
         <div className="container">

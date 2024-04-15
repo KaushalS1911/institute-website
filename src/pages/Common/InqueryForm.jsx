@@ -1,311 +1,186 @@
 import React, { useState } from "react";
-import "../../assets/css/style/style.css";
-import { BeatLoader } from "react-spinners";
+import {
+  Grid,
+  FormControl,
+  InputLabel,
+  Select,
+  TextField,
+  MenuItem,
+  Button,
+  CircularProgress,
+} from "@mui/material";
+import * as Yup from "yup";
+import { Formik, Form, ErrorMessage } from "formik";
+import axios from "axios";
 
-function InqueryForm() {
+const courses = [
+  "Flutter Development",
+  "Android Development",
+  "Game Development",
+  "Full Stack Development",
+  "Web Development",
+  "React Native",
+  "ASP.net development",
+  "Web DesignMaster in UI/UX Design",
+  "UI/UX Design",
+  "Advance Graphics Design",
+  "Adobe Illustrator",
+  "Adobe XD",
+  "CCC- Basic Computer Course",
+  "Photoshop",
+  "CorelDraw",
+  "C Programming",
+  "C++ Programming",
+  "Java Programming",
+  "IOS",
+  "Advance PHP",
+  "Laravel",
+  "Wordpress",
+  "Node JS",
+  "Angular JS",
+  "React JS",
+  "Python",
+];
+
+const validationSchema = Yup.object().shape({
+  firstName: Yup.string().required("First Name is required"),
+  lastName: Yup.string().required("Last Name is required"),
+  course: Yup.string().required("Course is required"),
+  mobileNumber: Yup.string()
+    .matches(/^[0-9]{10}$/, "Invalid mobile number")
+    .required("Mobile Number is required"),
+  email: Yup.string()
+    .email("Invalid email address")
+    .required("Email is required"),
+});
+
+function InquiryForm() {
   const [loading, setLoading] = useState(false);
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    course: "",
-    mobileNumber: "",
-    email: "",
-  });
 
-  const [errors, setErrors] = useState({
-    firstName: "",
-    lastName: "",
-    course: "",
-    mobileNumber: "",
-    email: "",
-  });
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-    validateInput(name, value);
-  };
-
-  const handleCourseChange = (e) => {
-    const selectedCourse = e.target.value;
-    setFormData({
-      ...formData,
-      course: selectedCourse,
-    });
-  };
-
-  const validateInput = (name, value) => {
-    console.log(name, value);
-    switch (name) {
-      case "firstName":
-        setErrors((prevErrors) => ({
-          ...prevErrors,
-          firstName: value.trim() === "" ? "Full Name is required" : "",
-        }));
-        break;
-
-      case "lastName":
-        setErrors((prevErrors) => ({
-          ...prevErrors,
-          lastName: value.trim() === "" ? "Last Name is required" : "",
-        }));
-        break;
-
-      case "course":
-        setErrors((prevErrors) => ({
-          ...prevErrors,
-          course: value.trim() === "" ? "Course is required" : "",
-        }));
-        break;
-
-      case "mobileNumber":
-        const mobileRegex = /^[0-9]{10}$/;
-        setErrors((prevErrors) => ({
-          ...prevErrors,
-          mobileNumber: mobileRegex.test(value) ? "" : "Invalid mobile number",
-        }));
-        break;
-
-      case "email":
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        setErrors((prevErrors) => ({
-          ...prevErrors,
-          email: emailRegex.test(value) ? "" : "Invalid email address",
-        }));
-        break;
-
-      default:
-        break;
-    }
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    setLoading(true);
-    for (const [name, value] of Object.entries(formData)) {
-      validateInput(name, value);
-    }
-
-    if (Object.values(errors).some((error) => error !== "")) {
-      alert("Please fix the errors in the form before submitting.");
-      setLoading(false);
-      return;
-    }
-
+  const handleFormSubmit = async (values, { setSubmitting, resetForm }) => {
     try {
-      const response = await fetch(
-        "https://jbs-it-institute-default-rtdb.firebaseio.com/InquiryForm.json",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
+      setLoading(true);
+      const response = await axios.post(
+        "https://jbs-institut-backend.onrender.com/api/inquiry",
+        values
       );
-
-      if (response.ok) {
-        setFormData({
-          firstName: "",
-          lastName: "",
-          course: "",
-          mobileNumber: "",
-          email: "",
-        });
-        setErrors({
-          firstName: "",
-          lastName: "",
-          course: "",
-          mobileNumber: "",
-          email: "",
-        });
-      } else {
-        throw new Error("Network response was not ok.");
+      if (response.status === 200) {
+        console.log("Form submitted successfully:", response.data);
+        resetForm();
       }
     } catch (error) {
-      console.error("There was a problem with the fetch operation:", error);
+      console.error("Error submitting form:", error);
     } finally {
       setLoading(false);
+      setSubmitting(false);
     }
   };
 
   return (
-    <>
-      <div className="inqury-form-outer">
-        <form method="POST" onSubmit={handleSubmit}>
-          <div className="col-lg-12">
-            <label htmlFor="firstName" class="form-label">
-              First Name
-            </label>
-            <div className="input-group mb-3">
-              <span className="input-group-text">
-                <i class="fas fa-user"></i>
-              </span>
-              <input
-                type="text"
-                className="form-control"
-                placeholder="First Name"
+    <Formik
+      initialValues={{
+        firstName: "",
+        lastName: "",
+        course: "",
+        mobileNumber: "",
+        email: "",
+      }}
+      validationSchema={validationSchema}
+      onSubmit={handleFormSubmit}
+    >
+      {({ values, handleChange, handleSubmit, isSubmitting, errors }) => (
+        <Form onSubmit={handleSubmit} className="InquiryForm">
+          <div className="inq-title">INQUIRY</div>
+          <Grid container spacing={2}>
+            <Grid item xs={24} >
+              <TextField
+                label="First Name"
                 name="firstName"
-                id="firstName"
-                value={formData.firstName}
-                onChange={handleInputChange}
-                required
+                fullWidth
+                size="small"
+                value={values.firstName}
+                onChange={handleChange}
+                error={Boolean(errors.firstName)}
+                helperText={<ErrorMessage name="firstName" />}
               />
-            </div>
-            <div className="error-message">{errors.firstName}</div>
-          </div>
-
-          <div className="col-lg-12">
-            <label htmlFor="lastName" class="form-label">
-              Last Name
-            </label>
-            <div className="input-group mb-3">
-              <span className="input-group-text">
-                <i class="fas fa-user"></i>
-              </span>
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Last Name"
+            </Grid>
+            <Grid item xs={24} >
+              <TextField
+                label="Last Name"
                 name="lastName"
-                id="lastName"
-                value={formData.lastName}
-                onChange={handleInputChange}
-                required
+                size="small"
+                fullWidth
+                value={values.lastName}
+                onChange={handleChange}
+                error={Boolean(errors.lastName)}
+                helperText={<ErrorMessage name="lastName" />}
               />
-            </div>
-            <div className="error-message">{errors.lastName}</div>
-          </div>
-
-          <div className="col-lg-12">
-            <label for="Course" class="form-label">
-              Course:
-            </label>
-            <div className="input-group mb-3">
-              <span className="input-group-text">
-                <i class="fas fa-bars"></i>
-              </span>
-              <select
-                class="form-select"
-                name="course"
-                id="course"
-                value={formData.course}
-                onChange={handleCourseChange}
-              >
-                <option value="Flutter Development">
-                  Flutter Development{" "}
-                </option>
-                <option value="Android Development">
-                  Android Development{" "}
-                </option>
-                <option value="Game Development"> Game Development</option>
-                <option value="Full Stack Development">
-                  Full Stack Development{" "}
-                </option>
-                <option value="Web Development"> Web Development</option>
-                <option value="React Native"> React Native</option>
-                <option value="ASP.net development">
-                  {" "}
-                  ASP.net development
-                </option>
-                <option value="Web DesignMaster in UI/UX Design">
-                  {" "}
-                  Web DesignMaster in UI/UX Design
-                </option>
-                <option value="UI/UX Design">UI/UX Design </option>
-                <option value="Advance Graphics Design">
-                  Advance Graphics Design{" "}
-                </option>
-                <option value="Adobe Illustrator"> Adobe Illustrator</option>
-                <option value="Adobe XD"> Adobe XD</option>
-                <option value="CCC- Basic Computer Course">
-                  {" "}
-                  CCC- Basic Computer Course
-                </option>
-                <option value="Photoshop">Photoshop </option>
-                <option value="CorelDraw"> CorelDraw</option>
-                <option value="C Programming">C Programming </option>
-                <option value="C++ Programming">C++ Programming </option>
-                <option value="Java Programming"> Java Programming</option>
-                <option value="IOS"> IOS</option>
-                <option value="Advance PHP"> Advance PHP</option>
-                <option value="Laravel">Laravel </option>
-                <option value="Wordpress">Wordpress </option>
-                <option value="Node JS">Node JS </option>
-                <option value="Angular JS"> Angular JS</option>
-                <option value="React JS"> React JS</option>
-                <option value="Python"> Python</option>
-              </select>
-            </div>
-            <div className="error-message">{errors.course}</div>
-          </div>
-
-          <div className="col-lg-12">
-            <label htmlFor="mobilenumber" className="form-label">
-              Mobile Number
-            </label>
-            <div className="input-group mb-3">
-              <span className="input-group-text">
-                <i className="fas fa-mobile"></i>
-              </span>
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Mobile No"
+            </Grid>
+            <Grid item xs={24}>
+              <FormControl fullWidth variant="outlined">
+              <InputLabel id="course-label" sx={{color:'#0e3c42'}}>Course</InputLabel>
+                <Select
+                  labelId="course-label"
+                  id="course"
+                  name="course"
+                  sx={{marginTop:'8px'}}
+                  size="small"
+                  value={values.course}
+                  onChange={handleChange}
+                  label="Course"
+                  error={Boolean(errors.course)}
+                >
+                  {courses.map((course, index) => (
+                    <MenuItem key={index} value={course}>
+                      {course}
+                    </MenuItem>
+                  ))}
+                </Select>
+                <ErrorMessage name="course" />
+              </FormControl>
+            </Grid>
+            <Grid item xs={24}>
+              <TextField
+                label="Mobile Number"
                 name="mobileNumber"
-                id="mobileNumber"
-                value={formData.mobileNumber}
-                onChange={handleInputChange}
-                required
+                fullWidth
+                size="small"
+                value={values.mobileNumber}
+                onChange={handleChange}
+                error={Boolean(errors.mobileNumber)}
+                helperText={<ErrorMessage name="mobileNumber" />}
               />
-            </div>
-            <div className="error-message">{errors.mobileNumber}</div>
-          </div>
-
-          <div className="col-lg-12">
-            <label htmlFor="email" className="form-label">
-              Email
-            </label>
-            <div className="input-group mb-3">
-              <span className="input-group-text">
-                <i className="far fa-envelope"></i>
-              </span>
-              <input
-                type="email"
-                className="form-control"
-                placeholder="Email id"
+            </Grid>
+            <Grid item xs={24}>
+              <TextField
+                label="Email"
                 name="email"
-                id="email"
-                onChange={handleInputChange}
-                value={formData.email}
-                required
+                fullWidth
+                size="small"
+                type="email"
+                value={values.email}
+                onChange={handleChange}
+                error={Boolean(errors.email)}
+                helperText={<ErrorMessage name="email" />}
               />
-            </div>
-            <div className="error-message">{errors.email}</div>
-          </div>
-          <div className="input-group-btn mt-4">
-            <button
-              className="btn"
-              type="submit"
-              disabled={
-                loading || Object.values(errors).some((error) => error !== "")
-              }
-            >
-              {loading ? (
-                <BeatLoader color="#ffffff" size={8} margin={2} />
-              ) : (
-                "Send"
-              )}
-            </button>
-          </div>
-        </form>
-      </div>
-    </>
+            </Grid>
+            <Grid item xs={24}>
+              <Button
+                fullWidth
+                sx={{ backgroundColor: "#0e3c42" }}
+                variant="contained"
+                color="primary"
+                type="submit"
+                disabled={isSubmitting || loading}
+              >
+                {loading ? <CircularProgress size={24} /> : "Send Inquiry"}
+              </Button>
+            </Grid>
+          </Grid>
+        </Form>
+      )}
+    </Formik>
   );
 }
 
-export default InqueryForm;
+export default InquiryForm;

@@ -5,18 +5,15 @@ import InqueryForm from "../../Common/InqueryForm";
 function Reactjs() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
-        <PageTitle title={`React JS`} />
-      </div>
+      <PageTitle title={`React JS`} />
       <div className="Master_course_outer block">
         <div className="container">
           <div className="Master_course">
             <div className="row">
               <div className="col-lg-8 mb-4">
                 <div className="Master_couse_title">
-                  About{" "}
+                  About
                   <span style={{ color: "rgb(96 105 124)" }}>
-                    {" "}
                     React JS Course
                   </span>
                 </div>

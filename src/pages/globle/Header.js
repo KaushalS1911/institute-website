@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import Logo from "../../assets/images/logo.png";
 import { Link } from "react-router-dom";
 import $ from "jquery";
-import { baseURL } from "../utils/config";
 
 const Header = () => {
+  /* eslint-disable */
   const [scrollTop, setScrollTop] = useState(0);
 
   const onScroll = () => {
@@ -534,16 +534,12 @@ export const Profile = (props) => {
 
 export const MenuScript = () => {
   useEffect(() => {
-    // ================ Mobile menu toggale ==================
-    // Main Menu
+   
     const handleSidebar = () => {
-      // $(".mobileNavigation").toggleClass("menuIn");
       $(".mobileNavigation").slideToggle();
     };
     $(".mobileNavigation").hide();
     $("#menuTaggle").on("click", handleSidebar);
-
-    // Sub Menu
     const handleSubSidebar = (event) => {
       $(".mobile-mainMenu .subMenu")
         .not($(event.currentTarget).next())
@@ -552,8 +548,6 @@ export const MenuScript = () => {
     };
     $(".mobile-mainMenu .subMenu").hide();
     $(".mobile-mainMenu > li > span").on("click", handleSubSidebar);
-
-    // Peta Menu
     const handlePetaSidebar = (event) => {
       $(".mobile-mainMenu .petaMenu")
         .not($(event.currentTarget).next())
@@ -572,9 +566,7 @@ export const MenuScript = () => {
     $(".mobile-mainMenu li:not(.noClick)").on("click", handleSlider);
 
     return () => {
-      // ================ Mobile menu toggale ==================
       $("#menuTaggle").off("click", handleSidebar);
-      // $(".mobile-mainMenu > li").off("click", handleSlider);
       $(".mobile-mainMenu > li > span").off("click", handleSubSidebar);
       $(".mobile-mainMenu .subMenu > li > span").off(
         "click",

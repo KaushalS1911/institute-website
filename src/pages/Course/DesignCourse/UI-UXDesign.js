@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function UXDesign() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
         <PageTitle title={`Master In UI/UX Design`} />
-      </div>
 
       <div className="Master_course_outer block">
         <div className="container">

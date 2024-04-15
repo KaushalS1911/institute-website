@@ -1,18 +1,4 @@
 @import "../abstracts/variabale";
-// $themeAll: $prime, $second, $third, $fourth;
-
-/*============== Container Props ==============*/
-// .container {
-//   max-width: 1800px;
-//   padding: 0 20px;
-
-//   @media screen and (max-width:1900px) and (min-width:1000px) {
-//     padding: 0 20px;
-//   }
-
-// }
-
-/*============== Responsive Text color Props ==============*/
 @each $key,
 $value in $themeAll {
   .text-#{$key} {
@@ -33,7 +19,6 @@ $value in $responsive {
   }
 }
 
-/*============== Backgroung color Props ==============*/
 @each $key,
 $value in $themeAll {
   .bg-#{$key} {
@@ -54,8 +39,6 @@ $value in $responsive {
   }
 }
 
-/*============== Border Props ==============*/
-/*# Border Color ==============*/
 @each $key,
 $value in $themeAll {
   .border-#{$key} {
@@ -64,7 +47,6 @@ $value in $themeAll {
 }
 
 
-/*# Border All ==============*/
 @each $key,
 $value in $themeAll {
   @for $i from 1 through 5 {

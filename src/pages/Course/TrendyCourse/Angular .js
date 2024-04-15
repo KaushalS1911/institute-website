@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function Angular() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
         <PageTitle title={`Angular JS`} />
-      </div>
       <div className="Master_course_outer block">
         <div className="container">
           <div className="Master_course">

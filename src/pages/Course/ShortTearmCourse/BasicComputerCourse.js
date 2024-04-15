@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function BasicComputerCourse() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
         <PageTitle title={`CCC- Basic Computer Course`} />
-      </div>
 
       <div className="Master_course_outer block">
         <div className="container">

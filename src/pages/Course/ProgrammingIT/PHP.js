@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function PHP() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
         <PageTitle title={`Advance PHP`} />
-      </div>
 
       <div className="Master_course_outer block">
         <div className="container">

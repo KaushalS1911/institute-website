@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function WebDevelopment() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
-        <PageTitle title={`Web Development`} />
-      </div>
+      <PageTitle title={`Web Development`} />
 
       <div className="Master_course_outer block">
         <div className="container">

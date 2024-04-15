@@ -1,18 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { initialData } from "./Blog";
-import SubscribeNewsletter from "../utils/SubscribeNewsletter";
 
 const SingleBlog = () => {
   let params = useParams();
   const [blogData, setBlogData] = useState({});
 
   useEffect(() => {
-    const singleData = initialData.find((_, index) => index == params.id);
+    /* eslint-disable */
+    const singleData = initialData.find((_, index) => index == params.id); 
     if (singleData && singleData.content) {
       setBlogData(singleData);
     }
-  }, [blogData]);
+  }, [params.id]);
+  
 
   return (
     <>
@@ -22,7 +23,7 @@ const SingleBlog = () => {
             <img src={blogData.image} alt="" className="h-100 w-100" />
           </div>
           <div className="d-flex justify-content-center w-100  my-md-5 my-5">
-            <div className="my-md-3 fw-bold fs-lg-38 fs-md-28 fs-22">
+            <div className="my-md-3 fw-bold fs-lg-30 fs-md-25 fs-22">
               {blogData.title}
             </div>
           </div>
@@ -44,8 +45,8 @@ const SingleBlog = () => {
             {blogData?.content?.list_of_points.map((e, ind) => {
               return (
                 <div className="py-3" key={ind} id={ind}>
-                  <div className="fs-34 fw-semibold my-2">{e.title}</div>
-                  <p className="lh-lg text-muted">{e.desc}</p>
+                  <div className="fs-25 fw-semibold my-2">{e.title}</div>
+                  <p className="fs-15 lh-lg text-muted">{e.desc}</p>
                 </div>
               );
             })}

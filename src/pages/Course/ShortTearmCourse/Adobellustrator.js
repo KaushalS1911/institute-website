@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function Adobellustrator() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
         <PageTitle title={`Adobe Ilustrator`} />
-      </div>
 
       <div className="Master_course_outer block">
         <div className="container">

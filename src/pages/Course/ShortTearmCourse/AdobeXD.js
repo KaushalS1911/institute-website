@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function AdobeXD() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
         <PageTitle title={`Adobe XD`} />
-      </div>
 
       <div className="Master_course_outer block">
         <div className="container">

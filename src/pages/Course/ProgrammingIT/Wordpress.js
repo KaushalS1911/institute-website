@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function Wordpress() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
-        <PageTitle title={`WordPress `} />
-      </div>
+      <PageTitle title={`WordPress `} />
 
       <div className="Master_course_outer block">
         <div className="container">
@@ -15,7 +13,7 @@ function Wordpress() {
             <div className="row">
               <div className="col-lg-8 mb-4">
                 <div className="Master_couse_title">
-                  About{" "}
+                  About
                   <span style={{ color: "rgb(96 105 124)" }}> WordPress </span>
                 </div>
                 <div className="Master_course_desc">
@@ -584,7 +582,7 @@ function Wordpress() {
                           data-bs-toggle="collapse"
                           data-bs-target="#faq-content-17"
                         >
-                           WordPress Performance Optimization
+                          WordPress Performance Optimization
                         </button>
                       </h4>
                       <div
@@ -593,28 +591,27 @@ function Wordpress() {
                         data-bs-parent="#faqlist"
                       >
                         <div class="faq-body">
-                        <ul class="bullets-point ps-3 fs-14">
-                          <li class="pb-2">
-                            Why is speed critical for your WordPress site?
-                          </li>
-                          <li class="pb-2">
-                            How to monitor your WordPress website speed?
-                          </li>
-                          <li class="pb-2">
-                            What decreases your WordPress website?
-                          </li>
-                          <li class="pb-2">
-                            Increase page speed managing plugins.
-                          </li>
-                          <li class="pb-2">Optimize images for Speed.</li>
-                          <li class="pb-2">Optimize WordPress database.</li>
-                          <li class="pb-2">
-                            How to utilize a Content Delivery Network (CDN)
-                          </li>
-                        </ul>
+                          <ul class="bullets-point ps-3 fs-14">
+                            <li class="pb-2">
+                              Why is speed critical for your WordPress site?
+                            </li>
+                            <li class="pb-2">
+                              How to monitor your WordPress website speed?
+                            </li>
+                            <li class="pb-2">
+                              What decreases your WordPress website?
+                            </li>
+                            <li class="pb-2">
+                              Increase page speed managing plugins.
+                            </li>
+                            <li class="pb-2">Optimize images for Speed.</li>
+                            <li class="pb-2">Optimize WordPress database.</li>
+                            <li class="pb-2">
+                              How to utilize a Content Delivery Network (CDN)
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                      </div>
-                      
                     </div>
                   </div>
                 </div>

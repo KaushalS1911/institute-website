@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function FlutterDevelopment() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
-        <PageTitle title={`Flutter Development`} />
-      </div>
+      <PageTitle title={`Flutter Development`} />
 
       <div className="Master_course_outer block">
         <div className="container">

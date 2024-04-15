@@ -1,7 +1,5 @@
 import React from "react";
-
 import { Link } from "react-router-dom";
-// import ExtraBanner from "../../assets/images/extraBanner.png";
 
 const PageTitle = ({ title }) => {
   return (

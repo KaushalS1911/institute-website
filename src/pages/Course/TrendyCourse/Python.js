@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function Python() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
-        <PageTitle title={`Python`} />
-      </div>
+      <PageTitle title={`Python`} />
 
       <div className="Master_course_outer block">
         <div className="container">

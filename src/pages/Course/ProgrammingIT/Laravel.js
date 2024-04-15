@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function Laravel() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
-        <PageTitle title={`Laravel`} />
-      </div>
+      <PageTitle title={`Laravel`} />
 
       <div className="Master_course_outer block">
         <div className="container">
@@ -332,7 +330,6 @@ function Laravel() {
                     <ul class="course-points_1 my-0 ms-2 mb-4">
                       <h4 class=" accordion-header   bullet-heading ">
                         <button
-                        
                           class="accordion-button collapsed"
                           type="button"
                           data-bs-toggle="collapse"

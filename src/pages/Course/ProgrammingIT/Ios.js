@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function Ios() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
-        <PageTitle title={`IOS`} />
-      </div>
+      <PageTitle title={`IOS`} />
 
       <div className="Master_course_outer block">
         <div className="container">

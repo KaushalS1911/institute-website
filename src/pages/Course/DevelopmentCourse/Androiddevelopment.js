@@ -6,9 +6,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function Androiddevelopment() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
         <PageTitle title={`Android Development`} />
-      </div>
 
       <div className="Master_course_outer block">
         <div className="container">

@@ -33,8 +33,7 @@ const initialData = [
     date: "18th Apr, 2023",
   },
   {
-    image:
-      "https://i.postimg.cc/dVGtW2kk/images.jpg",
+    image: "https://i.postimg.cc/dVGtW2kk/images.jpg",
     title: "Demystifying Cybersecurity: Safeguarding the Digital Frontier",
     content: {
       introduction:
@@ -91,8 +90,7 @@ const initialData = [
   },
 
   {
-    image:
-      "https://i.postimg.cc/x8qLHxdb/1-Ho0s63i-Tx0-Ir-Wog-PJu-R2u-A.jpg",
+    image: "https://i.postimg.cc/x8qLHxdb/1-Ho0s63i-Tx0-Ir-Wog-PJu-R2u-A.jpg",
     title: "Cloud Computing Unveiled: A Comprehensive Guide for Beginners",
     content: {
       introduction:
@@ -198,11 +196,9 @@ const initialData = [
       ],
     },
     date: "10 Dec, 2021",
-
   },
   {
-    image:
-      "https://i.postimg.cc/y6wwdwx9/Breaking-Down-Silos-featured.jpg",
+    image: "https://i.postimg.cc/y6wwdwx9/Breaking-Down-Silos-featured.jpg",
     title:
       "DevOps Culture: Breaking Down Silos for Efficient Software Development",
     content: {
@@ -253,17 +249,14 @@ const initialData = [
       ],
     },
     date: "30th May, 2021",
-
   },
 ];
 
 const Blog = () => {
   const navigate = useNavigate();
   return (
-    <div>
-      <div id="bannerSlider" className="position-relative">
-        <PageTitle title={`Blogs`} />
-      </div>
+    <>
+      <PageTitle title={`Blogs`} />
       <div className="blogCard p20-y">
         <div className="container">
           <div className="row">
@@ -284,7 +277,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

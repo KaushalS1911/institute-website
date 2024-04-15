@@ -5,9 +5,7 @@ import InqueryForm from "../../Common/InqueryForm";
 function JavaProgramming() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
-        <PageTitle title={`JAVA Programming`} />
-      </div>
+      <PageTitle title={`JAVA Programming`} />
 
       <div className="Master_course_outer block">
         <div className="container">
@@ -384,7 +382,6 @@ function JavaProgramming() {
                         </button>
                       </h4>
                       <div
-                      
                         id="faq-content-11"
                         class="accordion-collapse collapse"
                         data-bs-parent="#faqlist"

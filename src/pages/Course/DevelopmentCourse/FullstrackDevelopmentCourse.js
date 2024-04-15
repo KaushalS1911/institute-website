@@ -19,9 +19,7 @@ import { Link } from "react-router-dom";
 function FullstrackDevelopmentCourse() {
   return (
     <>
-      <div id="bannerSlider" className="position-relative">
-        <PageTitle title={`Full Stack Development`} />
-      </div>
+      <PageTitle title={`Full Stack Development`} />
 
       <div className="Master_course_outer block">
         <div className="container">
@@ -687,7 +685,6 @@ function FullstrackDevelopmentCourse() {
                         </div>
                       </div>
                     </div>
-                    
                   </div>
                 </div>
               </div>
