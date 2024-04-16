@@ -38,8 +38,6 @@ import Blog from "./pages/Blog/Blog";
 import Footer from "./pages/Globle/Footer";
 import Course from "./pages/Course/Course";
 import SingleBlog from "./pages/Blog/SingleBlog";
-import { Helmet } from "react-helmet";
-import fullstackdevelopment from '../src/assets/images/Course/Fullstack_development.png'
 import Header from "./pages/Globle/Header";
 
 
@@ -69,51 +67,6 @@ function App() {
   }, [location.pathname]);
   return (
     <>
-      <Helmet>
-        <title>
-          Fullstack Dveloper Course | Web Development Course in Surat | JBS
-        </title>
-        <meta
-          name="description"
-          content="JBS IT INSTITUTE offers comprehensive courses in coding, web development,UI/UX Design,Flutter Development and more. Join us to kickstart your career in the tech industry!"
-        />
-        <meta
-          name="keywords"
-          content="It Institute,Jbs It Institute,Institute,It,Jbs It"
-        />
-        <meta name="author" content="Monil Kakadiya" />
-        <meta
-          property="og:title"
-          content="Fullstack Dveloper Course | Web Development Course in Surat | JBS"
-        />
-        <meta
-          property="og:description"
-          content="JBS IT INSTITUTE offers comprehensive courses in coding, web development,UI/UX Design,Flutter Development and more. Join us to kickstart your career in the tech industry!"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="JBS" />
-        <meta property="og:image" content="https://example.com/image.jpg" />
-        <meta property="og:url" content="https://jbsitinstitute.com/" />
-        <meta
-          property="og:image"
-          content={process.env.PUBLIC_URL + fullstackdevelopment}
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="Fullstack Dveloper Course | Web Development Course in Surat | JBS"
-        />
-        <meta
-          name="twitter:description"
-          content="JBS IT INSTITUTE offers comprehensive courses in coding, web development,UI/UX Design,Flutter Development and more. Join us to kickstart your career in the tech industry!"
-        />
-        <meta name="twitter:image" content="https://example.com/image.jpg" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:image"
-          content={process.env.PUBLIC_URL + fullstackdevelopment}
-        />
-      </Helmet>
       <div id="header">
         <Header />
       </div>
