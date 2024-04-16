@@ -14,7 +14,7 @@ const Rank = () => {
                 <div className="col-lg-12 col-12">
                   <div className="bannerContent fw-bold text-md-start text-center">
                     <div
-                      className="fs-lg-35 fs-md-30 f  s-25  text-center m25-bottom"
+                      className="fs-lg-35 fs-md-30 fs-25  text-center m25-bottom"
                       style={{
                         color: "#fff",
                         fontWeight: "500",

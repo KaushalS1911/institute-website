@@ -112,7 +112,6 @@ const Testimonial = () => {
                   <div className="item">
                     <div className="row ms-3 me-3">
                       <div className="col-lg-12  col-12 card border_css m-0">
-                        {/* py-3 */}
                         <div className="row align-items-center ">
                           <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <div className="ratingImage ">

@@ -37,8 +37,8 @@ import WebDevelopment from "./pages/Course/DevelopmentCourse/WebDevelopment";
 import Blog from "./pages/Blog/Blog";
 import Course from "./pages/Course/Course";
 import SingleBlog from "./pages/Blog/SingleBlog";
-import Header from "./pages/globle/Header";
-import Footer from "./pages/globle/Footer";
+import Header from "./pages/Globle/Header";
+import Footer from "./pages/Globle/Footer";
 
 
 function App() {
@@ -68,7 +68,7 @@ function App() {
   return (
     <>
       <div id="header">
-        <Header />
+        <Header/>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -115,7 +115,7 @@ function App() {
           element={<AspDotNetDevelopment />}
         />
       </Routes>
-      <Footer />
+      <Footer/>
     </>
   );
 }

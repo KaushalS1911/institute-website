@@ -7,6 +7,16 @@ import company2 from "../../assets/images/Home/place_partner/company2.webp";
 import company3 from "../../assets/images/Home/place_partner/company3.webp";
 import company4 from "../../assets/images/Home/place_partner/company4.webp";
 import company5 from "../../assets/images/Home/place_partner/company5.webp";
+import company6 from "../../assets/images/Home/place_partner/company6.webp";
+import company8 from "../../assets/images/Home/place_partner/company8.webp";
+import company9 from "../../assets/images/Home/place_partner/company9.webp";
+import company10 from "../../assets/images/Home/place_partner/company10.webp";
+import company11 from "../../assets/images/Home/place_partner/company10.webp";
+import company12 from "../../assets/images/Home/place_partner/company11.webp";
+import company13 from "../../assets/images/Home/place_partner/company13.webp";
+import company14 from "../../assets/images/Home/place_partner/company14.webp";
+import company15 from "../../assets/images/Home/place_partner/company15.webp";
+import company16 from "../../assets/images/Home/place_partner/company16.webp";
 
 const OurPlacement = () => {
   const option = {
@@ -43,7 +53,7 @@ const OurPlacement = () => {
               </div>
             </div>
           </div>
-          <div className="mainSlider">
+          <div className="mainSlider p10-md-y m10-y">
             <OwlCarousel
               className="owl-theme"
               {...option}
@@ -76,6 +86,56 @@ const OurPlacement = () => {
               <div className="item">
                 <div className="imgsCompany">
                   <img src={company5} alt="company" />
+                </div>
+              </div>
+              <div className="item">
+                <div className="imgsCompany">
+                  <img src={company6} alt="company" />
+                </div>
+              </div>
+              <div className="item">
+                <div className="imgsCompany">
+                  <img src={company8} alt="company" />
+                </div>
+              </div>
+              <div className="item">
+                <div className="imgsCompany">
+                  <img src={company9} alt="company" />
+                </div>
+              </div>
+              <div className="item">
+                <div className="imgsCompany">
+                  <img src={company10} alt="company" />
+                </div>
+              </div>
+              <div className="item">
+                <div className="imgsCompany">
+                  <img src={company11} alt="company" />
+                </div>
+              </div>
+              <div className="item">
+                <div className="imgsCompany">
+                  <img src={company12} alt="company" />
+                </div>
+              </div>
+              <div className="item">
+                <div className="imgsCompany">
+                  <img src={company13} alt="company" />
+                </div>
+              </div>
+              <div className="item">
+                <div className="imgsCompany">
+                  <img src={company14} alt="company" />
+                </div>
+              </div>
+              <div className="item">
+                <div className="imgsCompany">
+                  <img src={company15} alt="company" />
+                </div>
+              </div>
+              <div className="item">
+                <div className="imgsCompany">
+                  <img src={company16} alt="company" />
                 </div>
               </div>
             </OwlCarousel>
