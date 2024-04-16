@@ -35,10 +35,10 @@ import GameDevelopment from "./pages/Course/DevelopmentCourse/GameDevelopment";
 import ReactNative from "./pages/Course/DevelopmentCourse/ReactNative";
 import WebDevelopment from "./pages/Course/DevelopmentCourse/WebDevelopment";
 import Blog from "./pages/Blog/Blog";
-import Footer from "./pages/Globle/Footer";
 import Course from "./pages/Course/Course";
 import SingleBlog from "./pages/Blog/SingleBlog";
-import Header from "./pages/Globle/Header";
+import Header from "./pages/globle/Header";
+import Footer from "./pages/globle/Footer";
 
 
 function App() {
