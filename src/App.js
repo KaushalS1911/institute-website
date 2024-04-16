@@ -37,7 +37,7 @@ import WebDevelopment from "./pages/Course/DevelopmentCourse/WebDevelopment";
 import Blog from "./pages/Blog/Blog";
 import Course from "./pages/Course/Course";
 import SingleBlog from "./pages/Blog/SingleBlog";
-import Header from '../src/pages/globle/Footer'
+import Header from '../src/pages/globle/Header'
 import Footer from '../src/pages/globle/Footer'
 
 
