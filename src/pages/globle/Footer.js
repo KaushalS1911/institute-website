@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/logo.png";
+import Logo from "../../assets/images/JBS-IT-Institute-logo.png";
 import {
   BsFacebook,
   BsWhatsapp,
@@ -40,7 +40,7 @@ const Footer = () => {
         <div className="mainFooter text-lg-start text-center">
           <div className="row justify-content-lg-between justify-content-center align-items-center">
             <div className="col-lg-4 col-xs-12 mb-sm-4">
-              <div className="logo m20-sm-y m-auto">
+              <div className="footer-logo m20-sm-y m-auto">
                 <Link to="/">
                   <img src={Logo} alt="JBS LOGO" />
                 </Link>

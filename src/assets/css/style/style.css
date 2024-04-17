@@ -5,10 +5,14 @@
   z-index: 2;
 }
 
-.logo {
-  width: 130px;
-}
 
+.footer-logo{
+  width: 100px;
+  height: 100px;
+}
+.footer-logo img{
+  width: 100%;
+}
 @media screen and (max-width: 1200px) {
   .logo {
     width: 90px;
