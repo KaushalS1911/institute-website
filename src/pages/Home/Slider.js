@@ -2,9 +2,9 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import Frame1 from '../../assets/images/Home/Slider/UX.jpg'
-import Frame2 from '../../assets/images/Home/Slider/Flutter.jpg'
-import Frame3 from '../../assets/images/Home/Slider/Full Stack.jpg'
+import Frame1 from '../../assets/images/Home/Slider/UX.webp'
+import Frame2 from '../../assets/images/Home/Slider/Flutter.webp'
+import Frame3 from '../../assets/images/Home/Slider/Full Stack.webp'
 
 function Slider() {
   const Main_slider = {
