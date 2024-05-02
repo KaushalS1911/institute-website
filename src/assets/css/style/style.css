@@ -393,11 +393,8 @@
 }
 
 #header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   z-index: 4;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
@@ -527,16 +524,7 @@
   display: inline;
 }
 
-/* #Footer .mainFooter h5::before {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  height: 2px;
-  width: 70%;
-  background-color: #0e314c;
-  transform: translate(-50%);
-} */
+
 
 #Footer .mainFooter .socialIcon span {
   margin-right: 35px;

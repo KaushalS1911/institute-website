@@ -49,33 +49,6 @@ a {
   height: auto;
 }
 
-.slider-outer .slider-image .slider-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.slider-outer .slider-image .slider-content h1 {
-  font-size: 45px;
-  margin-bottom: 15px;
-  font-weight: 900;
-  color: var(--color1);
-}
-
-.slider-outer .slider-image .slider-content .text-1 {
-  font-size: 25px;
-  margin-bottom: 15px;
-  color: var(--color1);
-  font-weight: 600;
-}
-
-.slider-outer .slider-image .slider-content p {
-  color: var(--color2);
-  font-size: 16px;
-  letter-spacing: 1.3px;
-}
 
 .slider-outer {
   position: relative;
@@ -136,9 +109,6 @@ a {
 }
 
 @media (max-width: 1440px) {
-  .slider-outer {
-    margin-top: 80px;
-  }
 
 }
 
@@ -146,10 +116,6 @@ a {
   .slider-outer .slider-image .slider-content {
     width: 100%;
     height: 500px;
-  }
-
-  .slider-outer {
-    margin-top: 0;
   }
 
 }
@@ -217,7 +183,6 @@ a {
 }
 .servicesBox {
   padding: 30px;
-  z-index: 22;
   background: white;
   box-shadow: 0 0 30px rgba(56, 46, 46, .1);
   margin: 0 10px;
@@ -229,12 +194,12 @@ a {
   height: 100%;
 }
 
-.servicesBox:hover {
+/* .servicesBox:hover {
   background: #2C529B;
   color: #fff;
   transition: all 0.5s ease-in-out;
   transform: translateY(-5px);
-}
+} */
 
 
 #serviceSection #ourServices .stratService .servicesBox .detailsPart .service-title {
@@ -259,7 +224,7 @@ a {
 }
 
 
-#serviceSection #ourServices .stratService .servicesBox:hover .service-title,
+/* #serviceSection #ourServices .stratService .servicesBox:hover .service-title,
 #serviceSection #ourServices .stratService .servicesBox:hover p {
   color: #fff;
 }
@@ -268,7 +233,7 @@ a {
     right: 20px;
     top: 5px;
   }
-}
+} */
 
 /* ============About more================== */
 .mainAbout {

@@ -33,7 +33,7 @@ const Footer = () => {
       behavior: "smooth",
     });
   };
-  
+
   return (
     <section id="Footer" style={{ background: "#f7fafd" }}>
       <div className="container">
@@ -62,7 +62,9 @@ const Footer = () => {
                 </li>
                 <li className="mx-2">
                   <Link to="https://twitter.com/i/flow/login?redirect_after_login=%2FInstituteJ88555"></Link>
-                  <BsTwitterX style={{ fontSize: "20px" }} />
+                  <BsTwitterX
+                    style={{ fontSize: "20px", color: "#6084A4" }}
+                  />
                 </li>
                 <li className="mx-2">
                   <Link

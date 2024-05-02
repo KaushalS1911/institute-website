@@ -7,7 +7,6 @@ const SingleBlog = () => {
   const [blogData, setBlogData] = useState({});
 
   useEffect(() => {
-    /* eslint-disable */
     const singleData = initialData.find((_, index) => index == params.id); 
     if (singleData && singleData.content) {
       setBlogData(singleData);
@@ -53,7 +52,6 @@ const SingleBlog = () => {
           </div>
         </div>
       </div>
-      <SubscribeNewsletter />
     </>
   );
 };
