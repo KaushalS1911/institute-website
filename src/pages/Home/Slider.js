@@ -12,9 +12,9 @@ function Slider() {
     loop: true,
     autoplay: true,
     dots: false,
-    autoplayTimeout: 5000,
-    animateOut: "fadeOut",
-    animateIn: "fadeIn",
+    autoplayTimeout: 6000,
+    autoplaySpeed: 6000,
+    slideTransition: "linear",
     nav: true,
     navText: [
       '<i class="fa-solid fa-arrow-left-long"></i>',

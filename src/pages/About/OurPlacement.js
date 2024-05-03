@@ -22,6 +22,9 @@ const OurPlacement = () => {
   const option = {
     nav: false,
     loop: true,
+    autoplayTimeout: 4000,
+    autoplaySpeed: 3000,
+    slideTransition: "linear",
     dots: false,
     responsive: {
       0: {

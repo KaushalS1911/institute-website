@@ -20,8 +20,10 @@ import img20 from "../../assets/images/Course/programming//illustrator.webp";
 import img21 from "../../assets/images/Course/programming/corel.webp";
 import { Link } from "react-router-dom";
 import PageTitle from "../Common/PageTitle";
+import Webtitle from "../globle/Webtitle";
 
 function Course() {
+    <Webtitle title="JBS IT Institute is one of the Leading Game Design Training Institute that offers the latest theory as well as practical modules to the students."/>
   return (
     <>
       <PageTitle title={`Course`} />
