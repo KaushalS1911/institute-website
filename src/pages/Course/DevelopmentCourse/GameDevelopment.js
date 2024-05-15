@@ -1,11 +1,13 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import gamedevelopment from '../../../assets/images/Course/Course/game developer.webp'
+
 
 function GameDevelopment() {
   return (
     <>
-      <PageTitle title={`Game Development`} />
+      <PageTitle title={`Game Development`} image={gamedevelopment} />
 
       <div className="Master_course_outer block">
         <div className="container">

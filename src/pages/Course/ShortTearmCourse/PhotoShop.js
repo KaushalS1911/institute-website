@@ -1,11 +1,13 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import photoshop from '../../../assets/images/Course/Course/photoshop.webp'
+
 
 function PhotoShop() {
   return (
     <>
-        <PageTitle title={`Adobe Photoshop`} />
+        <PageTitle title={`Adobe Photoshop`}  image={photoshop}/>
 
       <div className="Master_course_outer block">
         <div className="container">

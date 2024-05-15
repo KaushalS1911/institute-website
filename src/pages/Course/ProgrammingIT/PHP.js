@@ -1,11 +1,12 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import php from "../../../assets/images/Course/Course/php.webp";
 
 function PHP() {
   return (
     <>
-        <PageTitle title={`Advance PHP`} />
+      <PageTitle title={`Advance PHP`} image={php} />
 
       <div className="Master_course_outer block">
         <div className="container">
@@ -998,7 +999,7 @@ function PHP() {
                     >
                       CODEIGNITER
                     </h4>
-                    <div >
+                    <div>
                       <ul class="course-points_1">
                         <h4 class=" accordion-header   bullet-heading ">
                           <button

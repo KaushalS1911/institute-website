@@ -1,11 +1,13 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import wordpress from "../../../assets/images/Course/Course/wordpress.webp";
+
 
 function Wordpress() {
   return (
     <>
-      <PageTitle title={`WordPress `} />
+      <PageTitle title={`WordPress `} image={wordpress} />
 
       <div className="Master_course_outer block">
         <div className="container">

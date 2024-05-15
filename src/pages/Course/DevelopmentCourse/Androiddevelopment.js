@@ -2,12 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import android from '../../../assets/images/Course/Course/androlid development.webp'
+
 
 function Androiddevelopment() {
   return (
     <>
-        <PageTitle title={`Android Development`} />
-
+        <PageTitle title={`Android Development`} image={android}/>
+a
       <div className="Master_course_outer block">
         <div className="container">
           <div className="Master_course">

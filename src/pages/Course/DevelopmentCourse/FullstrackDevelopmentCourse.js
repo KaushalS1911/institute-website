@@ -15,11 +15,13 @@ import Nodejs from "../../../assets/images/Course/language/nodejs.webp";
 import Expressjs from "../../../assets/images/Course/language/Expressjs.webp";
 import MongoDB from "../../../assets/images/Course/language/monogdb.webp";
 import { Link } from "react-router-dom";
+import fullstack from '../../../assets/images/Course/Course/fullstack developer.webp'
+
 
 function FullstrackDevelopmentCourse() {
   return (
     <>
-      <PageTitle title={`Full Stack Development`} />
+      <PageTitle title={`Full Stack Development`} image={fullstack} />
 
       <div className="Master_course_outer block">
         <div className="container">

@@ -1,11 +1,13 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import Reactnative from '../../../assets/images/Course/Course/rect-native development.webp'
+
 
 function ReactNative() {
   return (
     <>
-      <PageTitle title={`React Native`} />
+      <PageTitle title={`React Native`} image={Reactnative} />
 
       <div className="Master_course_outer block">
         <div className="container">

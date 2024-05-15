@@ -1,11 +1,13 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import Java from '../../../assets/images/Course/Course/java.webp'
+
 
 function JavaProgramming() {
   return (
     <>
-      <PageTitle title={`JAVA Programming`} />
+      <PageTitle title={`JAVA Programming`} image={Java}/>
 
       <div className="Master_course_outer block">
         <div className="container">

@@ -39,6 +39,8 @@ import Course from "./pages/Course/Course";
 import SingleBlog from "./pages/Blog/SingleBlog";
 import Header from '../src/pages/globle/Header'
 import Footer from '../src/pages/globle/Footer'
+import Gallery from "./pages/Activities/Gallery";
+import Event from "./pages/Activities/Event";
 
 
 function App() {
@@ -74,6 +76,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/course" element={<Course />} />
+        <Route path="/event" element={<Event />} />
+        <Route path="/gallery" element={<Gallery />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<SingleBlog />} />
         <Route path="/contact" element={<Contact />} />

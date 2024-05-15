@@ -10,7 +10,7 @@ function Slider() {
   const Main_slider = {
     items: 1,
     loop: true,
-    autoplay: true,
+    autoplay: false,
     dots: false,
     autoplayTimeout: 6000,
     autoplaySpeed: 6000,

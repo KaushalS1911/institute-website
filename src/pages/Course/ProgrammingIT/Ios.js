@@ -1,11 +1,13 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import ios from '../../../assets/images/Course/Course/ios development.webp'
+
 
 function Ios() {
   return (
     <>
-      <PageTitle title={`IOS`} />
+      <PageTitle title={`IOS`} image={ios}/>
 
       <div className="Master_course_outer block">
         <div className="container">

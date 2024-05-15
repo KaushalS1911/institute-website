@@ -1,11 +1,13 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import WebDesign1 from '../../../assets/images/Course/Course/webdesign development.webp'
+
 
 function WebDesign() {
   return (
     <>
-      <PageTitle title={`Master In Web Design`} />
+      <PageTitle title={`Master In Web Design`} image={WebDesign1}/>
 
       <div className="Master_course_outer block">
         <div className="container">

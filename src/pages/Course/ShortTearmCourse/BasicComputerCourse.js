@@ -1,11 +1,12 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
+import bcc from '../../../assets/images/Course/Course/bcc.webp'
 import InqueryForm from "../../Common/InqueryForm";
 
 function BasicComputerCourse() {
   return (
     <>
-        <PageTitle title={`CCC- Basic Computer Course`} />
+        <PageTitle title={`CCC- Basic Computer Course`} image={bcc}/>
 
       <div className="Master_course_outer block">
         <div className="container">

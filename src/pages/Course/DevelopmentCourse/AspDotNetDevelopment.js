@@ -1,11 +1,14 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import aspnet from '../../../assets/images/Course/Course/asp.webp'
+
+
 
 function AspDotNetDevelopment() {
   return (
     <>
-      <PageTitle title={`ASP.net development`} />
+      <PageTitle title={`ASP.net development`} image={aspnet}/>
 
       <div className="Master_course_outer block">
         <div className="container">

@@ -1,11 +1,13 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import flutter from '../../../assets/images/Course/Course/fluuterdevelopment.webp'
+
 
 function FlutterDevelopment() {
   return (
     <>
-      <PageTitle title={`Flutter Development`} />
+      <PageTitle title={`Flutter Development`} image={flutter}/>
 
       <div className="Master_course_outer block">
         <div className="container">

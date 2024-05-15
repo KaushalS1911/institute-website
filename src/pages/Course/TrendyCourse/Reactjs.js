@@ -1,11 +1,13 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import reactjs from "../../../assets/images/Course/Course/reactjs.webp";
+
 
 function Reactjs() {
   return (
     <>
-      <PageTitle title={`React JS`} />
+      <PageTitle title={`React JS`} image={reactjs} />
       <div className="Master_course_outer block">
         <div className="container">
           <div className="Master_course">

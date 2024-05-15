@@ -1,11 +1,13 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import phython from "../../../assets/images/Course/Course/python.webp";
+
 
 function Python() {
   return (
     <>
-      <PageTitle title={`Python`} />
+      <PageTitle title={`Python`} image={phython}/>
 
       <div className="Master_course_outer block">
         <div className="container">

@@ -1,11 +1,13 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import laravel from '../../../assets/images/Course/Course/laravel.webp'
+
 
 function Laravel() {
   return (
     <>
-      <PageTitle title={`Laravel`} />
+      <PageTitle title={`Laravel`} image={laravel}/>
 
       <div className="Master_course_outer block">
         <div className="container">

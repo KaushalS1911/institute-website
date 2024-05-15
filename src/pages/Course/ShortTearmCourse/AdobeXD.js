@@ -1,11 +1,13 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import adobexd from '../../../assets/images/Course/Course/adobexd.webp'
+
 
 function AdobeXD() {
   return (
     <>
-        <PageTitle title={`Adobe XD`} />
+        <PageTitle title={`Adobe XD`} image={adobexd}/>
 
       <div className="Master_course_outer block">
         <div className="container">

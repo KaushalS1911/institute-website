@@ -1,11 +1,12 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
+import adobe from '../../../assets/images/Course/Course/ai.webp'
 import InqueryForm from "../../Common/InqueryForm";
 
 function Adobellustrator() {
   return (
     <>
-        <PageTitle title={`Adobe Ilustrator`} />
+        <PageTitle title={`Adobe Ilustrator`} image={adobe} />
 
       <div className="Master_course_outer block">
         <div className="container">

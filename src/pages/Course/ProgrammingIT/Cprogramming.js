@@ -1,11 +1,13 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import cprogramme from '../../../assets/images/Course/Course/c-programming.webp'
+
 
 function Cprogramming() {
   return (
     <>
-      <PageTitle title={`C Programming`} />
+      <PageTitle title={`C Programming`} image={cprogramme}/>
 
       <div className="Master_course_outer block">
         <div className="container">

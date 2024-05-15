@@ -1,11 +1,12 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import angular from "../../../assets/images/Course/Course/angular.webp";
 
 function Angular() {
   return (
     <>
-        <PageTitle title={`Angular JS`} />
+      <PageTitle title={`Angular JS`} image={angular} />
       <div className="Master_course_outer block">
         <div className="container">
           <div className="Master_course">

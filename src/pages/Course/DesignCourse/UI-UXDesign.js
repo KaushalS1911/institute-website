@@ -1,12 +1,13 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import Uiux from '../../../assets/images/Course/Course/UI-UX-Banner.webp'
+
 
 function UXDesign() {
   return (
     <>
-        <PageTitle title={`Master In UI/UX Design`} />
-
+        <PageTitle title={`Master In UI/UX Design`}  image={Uiux}/>
       <div className="Master_course_outer block">
         <div className="container">
           <div className="Master_course">

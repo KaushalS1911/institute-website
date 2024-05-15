@@ -1,11 +1,12 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import Graphic from '../../../assets/images/Course/Course/graphic.webp'
 
 function GraphicDesign() {
   return (
     <>
-      <PageTitle title={`Master In Graphic Design`} />
+      <PageTitle title={`Master In Graphic Design`} image={Graphic} />
       <div className="Master_course_outer block">
         <div className="container">
           <div className="Master_course">

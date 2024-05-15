@@ -1,11 +1,13 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import node from "../../../assets/images/Course/Course/nodejs.webp";
+
 
 function Node() {
   return (
     <>
-        <PageTitle title={`Node Js`} />
+        <PageTitle title={`Node Js`} image={node}/>
 
       <div className="Master_course_outer block">
         <div className="container">

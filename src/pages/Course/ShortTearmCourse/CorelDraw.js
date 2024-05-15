@@ -1,11 +1,13 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import coreldraw from '../../../assets/images/Course/Course/coreldraw.webp'
+
 
 function CorelDraw() {
   return (
     <>
-        <PageTitle title={`CorelDraw`} />
+        <PageTitle title={`CorelDraw`} image={coreldraw} />
 
       <div className="Master_course_outer block">
         <div className="container">

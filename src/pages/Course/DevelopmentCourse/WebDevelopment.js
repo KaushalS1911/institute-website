@@ -1,11 +1,13 @@
 import React from "react";
 import PageTitle from "../../Common/PageTitle";
 import InqueryForm from "../../Common/InqueryForm";
+import Webdevelopment from '../../../assets/images/Course/Course/rect-native development.webp'
+
 
 function WebDevelopment() {
   return (
     <>
-      <PageTitle title={`Web Development`} />
+      <PageTitle title={`Web Development`} image={Webdevelopment}/>
 
       <div className="Master_course_outer block">
         <div className="container">
