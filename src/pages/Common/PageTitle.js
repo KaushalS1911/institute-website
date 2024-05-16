@@ -66,7 +66,7 @@ const PageTitle = ({ title, image, backgroundColor = "#000" }) => {
             height: 600,
             width: "100%",
             display: "flex",
-            zIndex:'3',
+            zIndex:'0',
             alignItems: "center",
             justifyContent: "center",
             position: "relative",

@@ -7,7 +7,7 @@ import PageTitle from "../Common/PageTitle";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { CircularProgress } from "@mui/material";
-
+import { Link } from "react-router-dom";
 
 //Contact Validation
 const validationSchema = Yup.object({
@@ -260,21 +260,25 @@ const Contact = () => {
                 </div>
                 <h3 className="fw-medium fs-20 my-3">Mail Here</h3>
                 <p className="text-secondary fs-lg-16 fs-md-14 fs-13">
-                  jbsit01@gmail.com
+                  <a href="mailto:jbs.itinstitute@gmail.com">
+                    jbs.itinstitute@gmail.com
+                  </a>
                 </p>
               </div>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 my-3">
-              <div className="contact-info-box bg-light p-4">
-                <div className="contact-icon mx-auto">
-                  <i class="fa-solid fa-location-dot"></i>
+              <a href="#map">
+                <div className="contact-info-box bg-light p-4">
+                  <div className="contact-icon mx-auto">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <h3 className="fw-medium fs-20 my-3">Visit Here</h3>
+                  <p className="text-secondary fs-lg-16 fs-md-14 fs-13">
+                    F-38, City Center, Yogi Chowk,Chikuwadi, Varachha, Surat,
+                    Gujarat 395010
+                  </p>
                 </div>
-                <h3 className="fw-medium fs-20 my-3">Visit Here</h3>
-                <p className="text-secondary fs-lg-16 fs-md-14 fs-13">
-                  F-38, City Center, Yogi Chowk, Yogi Chowk Ground, Chikuwadi,
-                  Varachha, Surat, Gujarat 395010
-                </p>
-              </div>
+              </a>
             </div>
             <div className="col-lg-4 col-md-6 col-sm-12 my-3 ">
               <div className="contact-info-box bg-light p-4">
@@ -283,13 +287,13 @@ const Contact = () => {
                 </div>
                 <h3 className="fw-medium fs-20 my-3">Call Here</h3>
                 <p className="text-secondary fs-lg-16 fs-md-14 fs-13">
-                  +91 7984443901
+                  <Link to="tel:+917984443901">+91 7984443901</Link>
                 </p>
               </div>
             </div>
           </div>
         </div>
-        <div className="w-100 mt-5 mb-4">
+        <div className="w-100 mt-5 mb-4" id="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.4152472441606!2d72.88572987520234!3d21.215376181343018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04f155c0ad929%3A0x97b93382aed70c3a!2sJBS%20IT%20Institute!5e0!3m2!1sen!2sin!4v1710151880321!5m2!1sen!2sin"
             width={600}

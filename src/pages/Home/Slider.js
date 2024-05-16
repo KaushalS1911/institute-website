@@ -2,9 +2,10 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import Frame1 from '../../assets/images/Home/Slider/UX.webp'
-import Frame2 from '../../assets/images/Home/Slider/Flutter.webp'
-import Frame3 from '../../assets/images/Home/Slider/Full Stack.webp'
+import Frame1 from "../../assets/images/Home/Slider/UX.webp";
+import Frame2 from "../../assets/images/Home/Slider/Flutter.webp";
+import Frame3 from "../../assets/images/Home/Slider/Full Stack.webp";
+import Frame4 from "../../assets/images/Home/Slider/slider-4.webp";
 
 function Slider() {
   const Main_slider = {
@@ -28,6 +29,11 @@ function Slider() {
         <OwlCarousel className="owl-theme" id="ourPlacement" {...Main_slider}>
           <div className="item">
             <div className="slider-image">
+              <img src={Frame4} alt="slide_image" />
+            </div>
+          </div>
+          <div className="item">
+            <div className="slider-image">
               <img src={Frame1} alt="slide_image" />
             </div>
           </div>
@@ -35,7 +41,8 @@ function Slider() {
             <div className="slider-image">
               <img src={Frame2} alt="slide_image" />
             </div>
-          </div><div className="item">
+          </div>
+          <div className="item">
             <div className="slider-image">
               <img src={Frame3} alt="slide_image" />
             </div>

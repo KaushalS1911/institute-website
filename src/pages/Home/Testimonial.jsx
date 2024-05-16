@@ -1,11 +1,13 @@
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import RatingImage1 from "../../assets/images/Home/testimonial/ratingImage1.webp";
-import RatingImage2 from "../../assets/images/Home/testimonial/ratingImage2.webp";
-import RatingImage3 from "../../assets/images/Home/testimonial/ratingImage3.webp";
-import vector1 from "../../assets/images/Home/testimonial/Vector2.webp";
-import vector2 from "../../assets/images/Home/testimonial/vector (5).webp";
+import t1 from "../../assets/images/Home/testimonial/1.webp";
+import t2 from "../../assets/images/Home/testimonial/2.webp";
+import t3 from "../../assets/images/Home/testimonial/3.webp";
+import t4 from "../../assets/images/Home/testimonial/4.webp";
+import t5 from "../../assets/images/Home/testimonial/5.webp";
+import vector1 from "../../assets/images/Home/testimonial/vector1.png";
+import vector2 from "../../assets/images/Home/testimonial/vector2.png";
 
 const Testimonial = () => {
   const option = {
@@ -20,73 +22,73 @@ const Testimonial = () => {
   const ratingArry = [
     {
       id: "1",
-      image: RatingImage1,
+      image: t4,
       title: "Aditi Devani",
       dec: "Absolutely stellar experience at this IT institute! The instructors are incredibly knowledgeable and supportive, making complex concepts easy to grasp. The hands-on approach to learning truly sets this institute apart. Highly recommend to anyone looking to advance their IT skills",
     },
     {
       id: "2",
-      image: RatingImage2,
+      image: t1,
       title: "Yash Kakadiya",
       dec: "I enrolled in a course at this IT institute and it exceeded all my expectations. The curriculum is comprehensive, the facilities are top-notch, and the instructors are experts in their field. Plus, the career support services provided helped me land a job in the IT industry shortly after completing the program. Couldn't be happier with my experience here!",
     },
     {
       id: "3",
-      image: RatingImage3,
+      image: t2,
       title: "Bhavin Bhuva",
       dec: "I had the pleasure of attending this IT institute for a specialized training program, and I have to say, it was worth every penny. The instructors are not only knowledgeable but also passionate about what they teach, which made the learning experience enjoyable and engaging. I feel more confident in my IT skills now and would highly recommend this institute to anyone serious about advancing their career in technology.",
     },
     {
       id: "4",
-      image: RatingImage3,
+      image: t3,
       title: "Heet TImbadiya",
       dec: "As someone with limited IT background, I was a bit apprehensive about enrolling in a course at this institute, but I'm so glad I did. The instructors were patient and supportive, breaking down complex concepts into manageable chunks and providing plenty of opportunities for hands-on practice. By the end of the program, I felt equipped with the skills and knowledge needed to pursue a career in IT. Thank you to the entire team for such a positive learning experience!",
     },
     {
       id: "5",
-      image: RatingImage3,
+      image: t1,
       title: "Daksh Savani",
       dec: "This IT institute is simply outstanding! From the moment I walked in, I was impressed by the professionalism and dedication of the staff. The curriculum is up-to-date with the latest industry trends, and the instructors go above and beyond to ensure that every student succeeds. Whether you're a beginner or an experienced professional looking to upskill, I highly recommend checking out what this institute has to offer.",
     },
     {
       id: "6",
-      image: RatingImage3,
+      image: t2,
       title: "Sujal Paghdhal",
       dec: "I cannot speak highly enough about my experience at this IT institute. The instructors are not only experts in their field but also excellent communicators, making even the most complex topics easy to understand. The hands-on labs and real-world projects were incredibly valuable in solidifying my understanding of key concepts. If you're serious about a career in IT, look no further than this institute!",
     },
     {
       id: "7",
-      image: RatingImage3,
+      image: t3,
       title: "Neet Nathani",
       dec: "Attending this IT institute was a game-changer for me. The curriculum is structured in a way that builds a strong foundation while also allowing for specialization in areas of interest. The instructors are not just teachers; they are mentors who genuinely care about their students' success. The resources provided, including access to industry-standard software and equipment, are invaluable. I am grateful for the knowledge and skills I gained here.",
     },
     {
       id: "8",
-      image: RatingImage3,
+      image: t1,
       title: "Genius Mangroliya",
       dec: "Enrolling in a course at this IT institute was one of the best decisions I've made for my career. The instructors are experts in their respective fields and are passionate about sharing their knowledge. The hands-on approach to learning allowed me to apply what I learned in real-world scenarios, which greatly enhanced my understanding. The institute's commitment to staying updated with the latest technologies ensures that students are always learning cutting-edge skills.",
     },
     {
       id: "9",
-      image: RatingImage3,
+      image: t2,
       title: "Jeel Kakadiya",
       dec: "I completed a certification program at this IT institute, and I couldn't be happier with the experience. The curriculum was well-structured, covering a wide range of topics relevant to today's IT industry. The instructors were not only knowledgeable but also supportive, providing personalized attention when needed. The institute also offers excellent networking opportunities, connecting students with professionals in the field. I highly recommend this institute to anyone looking to advance their IT career.",
     },
     {
       id: "10",
-      image: RatingImage3,
+      image: t5,
       title: "Archi Savani",
-      dec: "This IT institute trul sets the standard for excellence in technology education. The instructors are experts who are passionate about what they do, and it shows in their teaching. The curriculum is rigorous but rewarding, challenging students to think critically and problem-solve effectively"
+      dec: "This IT institute trul sets the standard for excellence in technology education. The instructors are experts who are passionate about what they do, and it shows in their teaching. The curriculum is rigorous but rewarding, challenging students to think critically and problem-solve effectively",
     },
     {
       id: "11",
-      image: RatingImage3,
+      image: t1,
       title: "Dax Kakadiya",
       dec: "I cannot speak highly enough about the support I received at this IT institute. From the moment I inquired about their programs to the day I completed my course, the staff went above and beyond to ensure my success. The instructors are not only knowledgeable but also approachable, always willing to answer questions and provide guidance. The career services team helped me polish my resume and prepare for interviews, ultimately landing me a job in my desired field. Thank you for everything!",
     },
     {
       id: "12",
-      image: RatingImage3,
+      image: t2,
       title: "Harshil Savaliya",
       dec: "This IT institute exceeded my expectations in every way. The instructors are not only experts in their fields but also excellent communicators, making even the most complex topics easy to understand. The small class sizes allowed for personalized attention, ensuring that no student was left behind. The institute's emphasis on practical, real-world skills gave me the confidence to pursue opportunities in the IT industry. I highly recommend this institute to anyone looking to kickstart or advance their career in technology.",
     },
@@ -117,7 +119,7 @@ const Testimonial = () => {
                         <div className="row align-items-center ">
                           <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <div className="ratingImage ">
-                              <div className="ratingImg2 hw-90  m-auto m10-bottom">
+                              <div className="ratingImg2    m-auto m10-bottom">
                                 <img src={item.image} alt="rating_image" />
                               </div>
                             </div>
@@ -144,9 +146,21 @@ const Testimonial = () => {
                           </div>
                           <div className="col-12 col-md-8 padding_side">
                             <div className="ratingText text-gray fs-lg-18 fs-16">
-                              <img className="vector-1" src={vector1} alt="" />
-                              {item.dec}
-                              <img className="vector-2 " src={vector2} alt="" />
+                              <img
+                                className="vector-1"
+                                src={vector1}
+                                alt="vector"
+                                width={80}
+                                height={80}
+                              />
+                              <p className="my-4">{item.dec}</p>
+                              <img
+                                className="vector-2 "
+                                src={vector2}
+                                alt="vector"
+                                width={80}
+                                height={80}
+                              />
                             </div>
                           </div>
                         </div>

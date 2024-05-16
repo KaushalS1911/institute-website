@@ -1,7 +1,10 @@
 import React from "react";
-import Service1 from "../../assets/images/Home/Service/service1.webp";
-import Service2 from "../../assets/images/Home/Service/service2.webp";
-import Service3 from "../../assets/images/Home/Service/service3.webp";
+import Service1 from "../../assets/images/Home/Service/1.webp";
+import Service2 from "../../assets/images/Home/Service/2.webp";
+import Service3 from "../../assets/images/Home/Service/3.webp";
+import Service4 from "../../assets/images/Home/Service/4.webp";
+import Service5 from "../../assets/images/Home/Service/5.webp";
+import Service6 from "../../assets/images/Home/Service/6.webp";
 
 const Service = () => {
   const serviceArry = [
@@ -30,7 +33,7 @@ const Service = () => {
     },
     {
       id: 4,
-      image: Service1,
+      image: Service4,
       title: `Career Guidance and Placement Assistance`,
       dec: `Your success is our priority. Receive personalized career guidance and take advantage of our strong network of industry connections. Our placement assistance ensures that you are well-prepared for the workforce and have access to exciting job opportunities.`,
       subdec: `To achieve this objective, we provide an extensive selection of educational programs tailored to the needs of professionals, 
@@ -38,7 +41,7 @@ const Service = () => {
     },
     {
       id: 5,
-      image: Service2,
+      image: Service5,
       title: `Hands-On Learning`,
       dec: `Theory meets practice at JBS IT Institute. Engage in hands-on projects, workshops, and real-world simulations to reinforce your learning and develop practical skills that set you apart in the job market.`,
       subdec: `and including developers Facilities Study in a conducive learning environment equipped with the 
@@ -46,7 +49,7 @@ const Service = () => {
     },
     {
       id: 6,
-      image: Service3,
+      image: Service6,
       title: `Continuous Learning and Professional Development`,
       dec: `Education doesn't end in the classroom. Stay relevant and continue to grow with our ongoing training programs and professional development opportunities. We believe in a lifelong learning approach to keep you at the forefront of the IT field.`,
       subdec: `the most current and pertinent material , we regularly update our courses`,
@@ -65,7 +68,6 @@ const Service = () => {
                           <img
                             src={res.image}
                             alt="images"
-                            className="hw-xl-30 hw-sm-35 hw-20"
                           />
                         </div>
                         <div

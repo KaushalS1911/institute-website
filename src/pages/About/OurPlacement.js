@@ -52,7 +52,7 @@ const OurPlacement = () => {
             </div>
             <div className="pageTitleBanner innerPages height-xl-20 height-sm-20 height-10">
               <div className="pageTitleBox text-center">
-                <div className="bar1" style={{backgroundColor:'#2c529b'}}></div>
+                <div className="bar" style={{backgroundColor:'#2c529b'}}></div>
               </div>
             </div>
           </div>

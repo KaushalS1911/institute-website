@@ -170,16 +170,20 @@ a {
 }
 
 #serviceSection #ourServices .stratService .servicesBox .iconPart {
-  background: radial-gradient(#f1f5f9, #d5e1ee 85%);
+  /* background: radial-gradient(#f1f5f9, #d5e1ee 85%); */
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   box-shadow: -10px 4px 10px 0px rgba(105, 131, 135, 0.176) inset;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   margin-bottom: 15px;
   font-size: 50px;
+}
+#serviceSection #ourServices .stratService .servicesBox .iconPart img {
+	width: 100px;
+	height: 100px;
 }
 .servicesBox {
   padding: 30px;
@@ -561,16 +565,16 @@ a {
 }
 
 .ratingText .vector-1 {
-  width: 50px !important;
+  width: 80px !important;
   height: 40px !important;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .ratingText .vector-2 {
-  width: 50px !important;
+  width: 80px !important;
   height: 40px !important;
   float: right;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .bannerContent .information {

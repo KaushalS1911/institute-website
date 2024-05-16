@@ -95,15 +95,13 @@ const Header = () => {
                             <div className="col-3 m20-bottom">
                               <ul>
                                 <li>
-                                  <Link to={`/gallery`}>
-                                  Gallery
-                                  </Link>
+                                  <Link to={`/Event`}>Events</Link>
                                 </li>
-                                <li>
-                                  <Link to={`/event`}>
+                                {/* <li>
+                                  <Link to={`/gallery`}>
                                   Events
                                   </Link>
-                                </li>
+                                </li> */}
                               </ul>
                             </div>
                           </div>
@@ -322,15 +320,11 @@ const Header = () => {
                             <div className="col-12 m20-bottom">
                               <ul>
                                 <li>
-                                  <Link to={`/gallery`}>
-                                   Gallery
-                                  </Link>
+                                  <Link to={`/event`}>Event</Link>
                                 </li>
-                                <li>
-                                  <Link to={`/event`}>
-                                   Event
-                                  </Link>
-                                </li>
+                                {/* <li>
+                                  <Link to={`/gallery`}>Gallery</Link>
+                                </li> */}
                               </ul>
                             </div>
                           </div>

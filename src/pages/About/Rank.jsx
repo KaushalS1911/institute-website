@@ -25,7 +25,7 @@ const Rank = () => {
                     </div>
                     <div className="pageTitleBanner innerPages height-xl-20 height-sm-20 height-10 m-3">
                       <div className="pageTitleBox text-center">
-                        <div className="bar1"></div>
+                        <div className="bar"></div>
                       </div>
                     </div>
                   </div>

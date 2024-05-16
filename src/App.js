@@ -37,47 +37,48 @@ import WebDevelopment from "./pages/Course/DevelopmentCourse/WebDevelopment";
 import Blog from "./pages/Blog/Blog";
 import Course from "./pages/Course/Course";
 import SingleBlog from "./pages/Blog/SingleBlog";
-import Header from '../src/pages/globle/Header'
-import Footer from '../src/pages/globle/Footer'
+import Header from "../src/pages/globle/Header";
+import Footer from "../src/pages/globle/Footer";
 import Gallery from "./pages/Activities/Gallery";
 import Event from "./pages/Activities/Event";
-
+import Innerimagespage from "./pages/Activities/Innerimagespage";
+import NoPage from "./pages/globle/NoPage";
 
 function App() {
   const location = useLocation();
-  const { pathname } = useLocation();
+  const { pathname } = location;
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
     window.addEventListener("beforeunload", saveScrollPosition);
 
-    if (scrollPosition) {
-      window.scrollTo(0, scrollPosition);
-    }
-
     return () => {
       window.removeEventListener("beforeunload", saveScrollPosition);
     };
-  }, [pathname, scrollPosition]);
+  }, []);
+
+  useEffect(() => {
+    if (scrollPosition) {
+      window.scrollTo(0, scrollPosition);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname]);
 
   const saveScrollPosition = () => {
     setScrollPosition(window.scrollY);
   };
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location.pathname]);
   return (
     <>
-      <div id="header">
-        <Header/>
-      </div>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/course" element={<Course />} />
         <Route path="/event" element={<Event />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/details/:id" element={<Innerimagespage />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<SingleBlog />} />
         <Route path="/contact" element={<Contact />} />
@@ -118,8 +119,9 @@ function App() {
           path="/aspdotnetdevelopment"
           element={<AspDotNetDevelopment />}
         />
+        <Route path="*" element={<NoPage />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </>
   );
 }
