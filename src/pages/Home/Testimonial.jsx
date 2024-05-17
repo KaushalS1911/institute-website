@@ -119,8 +119,8 @@ const Testimonial = () => {
                         <div className="row align-items-center ">
                           <div className=" col-lg-4 col-md-4 col-sm-12 col-xs-12">
                             <div className="ratingImage ">
-                              <div className="ratingImg2    m-auto m10-bottom">
-                                <img src={item.image} alt="rating_image" />
+                              <div className="ratingImg2 m-auto m10-bottom w-100 h-100">
+                                <img src={item.image} alt="rating_image" width={150} height={100}/>
                               </div>
                             </div>
                             <div className="h4 rateTitle fs-lg-20 fs-md-18 fs-16 text-center">

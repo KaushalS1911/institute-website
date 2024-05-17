@@ -54,7 +54,12 @@
 .mainWebPages {
   max-height: 100vh;
 }
-
+.ratingImg2  img{
+  width: 30px;
+  height: 30px;
+  margin: auto!important;
+  
+}
 .middleHeader {
   background-color: #fff;
 }

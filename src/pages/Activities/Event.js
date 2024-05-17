@@ -21,6 +21,8 @@ const cards = [
       "https://i.postimg.cc/Pq2HjRFX/TPPS0849.jpg",
       "https://i.postimg.cc/qvNDRZRB/TPPS0851.jpg",
       "https://i.postimg.cc/hvwx3MqM/4TPP1100.jpg",
+      "https://i.postimg.cc/wM8WZk3d/TPPS0994.jpg",
+
     ],
   },
   {
@@ -38,11 +40,11 @@ const cards = [
   {
     id: 3,
     image:
-      "https://i.postimg.cc/XJQQJPrQ/Whats-App-Image-2024-05-16-at-9-52-22-AM-1.jpg",
+    "https://i.postimg.cc/BvGCS3nx/Whats-App-Image-2024-05-16-at-9-52-24-AM.jpg",
     title: "Navaratri Celebration",
     list_of_points: [
-      "https://i.postimg.cc/XJQQJPrQ/Whats-App-Image-2024-05-16-at-9-52-22-AM-1.jpg",
       "https://i.postimg.cc/g21T31kJ/Whats-App-Image-2024-05-16-at-9-52-22-AM.jpg",
+      "https://i.postimg.cc/XJQQJPrQ/Whats-App-Image-2024-05-16-at-9-52-22-AM-1.jpg",
       "https://i.postimg.cc/BvGCS3nx/Whats-App-Image-2024-05-16-at-9-52-24-AM.jpg",
       "https://i.postimg.cc/RFpfHx4p/Whats-App-Image-2024-05-16-at-9-52-25-AM.jpg",
       "https://i.postimg.cc/k5ntYg5h/Whats-App-Image-2024-05-16-at-9-52-26-AM-1.jpg",

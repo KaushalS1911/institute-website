@@ -97,11 +97,11 @@ const Header = () => {
                                 <li>
                                   <Link to={`/Event`}>Events</Link>
                                 </li>
-                                {/* <li>
+                                <li>
                                   <Link to={`/gallery`}>
-                                  Events
+                                  Gallery
                                   </Link>
-                                </li> */}
+                                </li>
                               </ul>
                             </div>
                           </div>
@@ -322,9 +322,9 @@ const Header = () => {
                                 <li>
                                   <Link to={`/event`}>Event</Link>
                                 </li>
-                                {/* <li>
+                                <li>
                                   <Link to={`/gallery`}>Gallery</Link>
-                                </li> */}
+                                </li>
                               </ul>
                             </div>
                           </div>
