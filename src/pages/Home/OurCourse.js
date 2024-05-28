@@ -41,7 +41,7 @@ const OurCourse = () => {
                           <span className="me-3">
                             <FiCheckCircle className="text-danger" />
                           </span>
-                          Web Development
+                          Web Design & Development
                         </div>
                       </Link>
                       <Link to="/graphic" className="w-100 d-block">
@@ -84,7 +84,7 @@ const OurCourse = () => {
                           <span className="me-3">
                             <FiCheckCircle className="text-success" />
                           </span>
-                          Node js
+                          React Js & Node js
                         </div>
                       </Link>
                       <Link to="/reactjs" className="w-100 d-block">
@@ -92,7 +92,7 @@ const OurCourse = () => {
                           <span className="me-3">
                             <FiCheckCircle className="text-success" />
                           </span>
-                          React js
+                          C & C++ Programming
                         </div>
                       </Link>
                       <Link to="/Cprogramming" className="w-100 d-block">
@@ -100,7 +100,7 @@ const OurCourse = () => {
                           <span className="me-3">
                             <FiCheckCircle className="text-success" />
                           </span>
-                          C
+                          Full Stack Development
                         </div>
                       </Link>
                       <Link to="/photoshop" className="w-100 d-block">
@@ -108,7 +108,7 @@ const OurCourse = () => {
                           <span className="me-3">
                             <FiCheckCircle className="text-success" />
                           </span>
-                          Photoshop
+                          Digital Marketing
                         </div>
                       </Link>
                     </div>

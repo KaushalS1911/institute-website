@@ -61,10 +61,11 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li className="mx-2">
-                  <Link to="https://twitter.com/i/flow/login?redirect_after_login=%2FInstituteJ88555"></Link>
-                  <BsTwitterX
-                    style={{ fontSize: "20px", color: "#6084A4" }}
-                  />
+                  <Link to="  ">
+                    <BsTwitterX
+                      sx={{ fontSize: "20px", color: "#6084A4" }}
+                    />
+                  </Link>
                 </li>
                 <li className="mx-2">
                   <Link
@@ -104,10 +105,10 @@ const Footer = () => {
                   <h5>Courses</h5>
                   <ul className="aboutUs m0 p30-top ">
                     <li>
-                      <Link to="/androidDevelopment"> Android Development</Link>
+                      <Link to="/androidDevelopment" title="Master Android Development"> Android Development</Link>
                     </li>
                     <li>
-                      <Link to="/webdevelopment"> Web Development</Link>
+                      <Link to="/webdevelopment" > Web Development</Link>
                     </li>
                     <li>
                       <Link to="/graphic"> Graphic Design</Link>
