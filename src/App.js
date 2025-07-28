@@ -74,7 +74,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/abou" element={<About />} />
         <Route path="/course" element={<Course />} />
         <Route path="/event" element={<Event />} />
         <Route path="/gallery" element={<Gallery />} />
